@@ -14,6 +14,7 @@ DEFAULT_BASE = 'https://raw.githubusercontent.com/hanull01/naver-krx-universe-re
 KST = ZoneInfo('Asia/Seoul')
 FILES = {'manifest': 'data/market/manifest.json', 'rankings': 'data/market/rankings.json',
          'industries': 'data/market/industries.json', 'investors': 'data/market/investor-flow.json'}
+MEMBERSHIP_FILE = 'data/market/industry-membership.json'
 POSITIVE = ('trading_value', 'volume', 'volume_surge', 'high_52week', 'gainers')
 FAMILIES = {'trading_value': 'LIQUIDITY', 'volume': 'VOLUME', 'volume_surge': 'VOLUME',
             'high_52week': 'MOMENTUM', 'gainers': 'MOMENTUM'}
@@ -44,7 +45,11 @@ def input_locations(input_base=None, input_dir=None):
     return {key: base.rstrip('/') + '/' + path for key, path in FILES.items()}
 
 def load_inputs(input_base=None, input_dir=None, reader=read_json):
-    return {key: reader(path) for key, path in input_locations(input_base, input_dir).items()}
+    inputs = {key: reader(path) for key, path in input_locations(input_base, input_dir).items()}
+    location = str(Path(input_dir) / Path(MEMBERSHIP_FILE).name) if input_dir else (input_base or DEFAULT_BASE).rstrip('/') + '/' + MEMBERSHIP_FILE
+    try: inputs['membership'] = reader(location)
+    except InputError: inputs['membership'] = {'status': 'NOT_READY', 'reason': 'MISSING_OR_UNREADABLE'}
+    return inputs
 
 def parse_time(value):
     if not isinstance(value, str): raise InputError('manifest generatedAt missing')
@@ -179,35 +184,71 @@ def build_outputs(inputs, config, clock=now):
                'weakIndustryCount': sum(r['state'] == 'WEAK' for r in context_industries), 'candidateCount': len(candidates),
                'enrichmentEligibleCount': sum(c['enrichmentEligible'] for c in candidates), 'bucketCounts': bucket_counts,
                'cautionCounts': caution_counts, 'warnings': freshness['warnings'], 'industries': context_industries}
-    # The relay currently supplies a verified DAY ranking only.  Keep the raw
-    # amount/volume names in candidate evidence; do not infer a net-buy value.
-    multi_period = build_multi_period_evidence(candidates)
+    # Keep NAVER's raw amount/volume names in candidate evidence; do not infer
+    # or rename them to a net-buy quantity.
+    multi_period = build_multi_period_evidence(candidates, inputs['investors'])
+    membership = inputs.get('membership', {})
+    membership_status = membership.get('status') if isinstance(membership, dict) else 'NOT_READY'
+    membership_reason = membership.get('reason') if isinstance(membership, dict) else 'MISSING_OR_UNREADABLE'
+    if membership_status == 'OK':
+        try:
+            age_hours = (parse_time(generated).astimezone(timezone.utc) - parse_time(membership.get('generatedAt')).astimezone(timezone.utc)).total_seconds() / 3600
+            if age_hours > 24:
+                membership_status, membership_reason = 'NOT_READY', 'STALE_CACHE'
+        except InputError:
+            membership_status, membership_reason = 'NOT_READY', 'INVALID_GENERATED_AT'
+    state_by_id = {row['id']: row['state'] for row in context_industries if row.get('id') is not None}
     for candidate in candidates:
-        candidate['industry'] = {'status': 'NOT_READY', 'reason': 'NAVER_MEMBER_CONTRACT_UNVERIFIED',
-                                 'id': None, 'name': None, 'state': None, 'contextSignal': 'NOT_READY'}
+        matches = membership.get('byCode', {}).get(candidate['code'], []) if membership_status == 'OK' else []
+        if len(matches) == 1:
+            item = matches[0]
+            candidate['industry'] = {'status': 'READY', 'id': item.get('id'), 'name': item.get('name'),
+                                     'state': state_by_id.get(item.get('id')), 'contextSignal': state_by_id.get(item.get('id'), 'NOT_READY')}
+        else:
+            candidate['industry'] = {'status': 'NOT_READY', 'reason': 'MISSING_MAPPING' if membership_status == 'OK' else membership_reason,
+                                     'id': None, 'name': None, 'state': None, 'contextSignal': 'NOT_READY'}
     latest = {'generatedAt': generated, 'sourceGeneratedAt': freshness['sourceGeneratedAt'], 'status': freshness['status'], 'candidateCount': len(candidates),
               'enrichmentEligibleCount': sum(c['enrichmentEligible'] for c in candidates), 'bucketCounts': bucket_counts,
               'cautionCounts': caution_counts, 'warnings': freshness['warnings'], 'candidates': candidates}
     latest['multiPeriodInvestorEvidence'] = multi_period
-    latest['industryMembership'] = {'status': 'NOT_READY', 'reason': 'NAVER_MEMBER_CONTRACT_UNVERIFIED'}
+    latest['industryMembership'] = {'status': membership_status or 'NOT_READY', 'reason': membership_reason,
+                                    'generatedAt': membership.get('generatedAt')}
     return latest, context
 
-def build_multi_period_evidence(candidates):
+def build_multi_period_evidence(candidates, investors):
     """Describe only the periods actually available in the input contract.
 
-    WEEK/MONTH/THREE_MONTH deliberately remain unavailable until a live NAVER
-    contract is re-verified.  DAY is ranking direction evidence, not a claim
-    about a calculated net purchase amount.
+    DAY is ranking direction evidence, not a claim about a calculated net
+    purchase amount. Other periods are included only when the relay marks
+    their individually paginated collections as OK.
     """
+    multi = investors.get('multiPeriod', {}) if isinstance(investors, dict) else {}
+    periods = multi.get('periods', {}) if isinstance(multi, dict) else {}
+    supported = ['DAY'] + [period for period in ('WEEK', 'MONTH', 'THREE_MONTH') if periods.get(period, {}).get('status') == 'OK']
+    not_ready = [period for period in ('WEEK', 'MONTH', 'THREE_MONTH') if period not in supported]
     items = []
     for candidate in candidates:
         day = [row for row in candidate['evidence']['investors'] if row.get('side') in ('BUY', 'SELL')]
+        evidence = []
         if day:
-            items.append({'code': candidate['code'], 'name': candidate['name'], 'periods': [{'periodType': 'DAY', 'directions': [
+            evidence.append({'periodType': 'DAY', 'directions': [
                 {'investorType': row.get('investorType'), 'side': row.get('side'), 'accTradeVolume': row.get('accTradeVolume'),
-                 'accTradeAmount': row.get('accTradeAmount')} for row in day]}], 'alignment': 'DAY_ONLY'})
-    return {'status': 'PARTIAL', 'supportedPeriodTypes': ['DAY'], 'notReadyPeriodTypes': ['WEEK', 'MONTH', 'THREE_MONTH'],
-            'reason': 'NAVER_PERIOD_CONTRACT_UNVERIFIED', 'items': items}
+                 'accTradeAmount': row.get('accTradeAmount')} for row in day]})
+        for period in supported:
+            if period == 'DAY': continue
+            directions = []
+            for entry in periods[period].get('investors', []):
+                for side, key in (('BUY', 'buy'), ('SELL', 'sell')):
+                    for rank, row in enumerate(entry.get(key, []), 1):
+                        if row.get('code') == candidate['code']:
+                            directions.append({'investorType': entry.get('investorType'), 'side': side, 'derivedRank': rank,
+                                               'accTradeVolume': row.get('accTradeVolume'), 'accTradeAmount': row.get('accTradeAmount'),
+                                               'bizdateFrom': row.get('bizdateFrom'), 'bizdateTo': row.get('bizdateTo'), 'toRankingAt': row.get('toRankingAt')})
+            if directions: evidence.append({'periodType': period, 'directions': directions})
+        if evidence: items.append({'code': candidate['code'], 'name': candidate['name'], 'periods': evidence,
+                                   'alignment': 'MULTI_PERIOD' if len(evidence) > 1 else 'DAY_ONLY'})
+    return {'status': 'OK' if not not_ready else 'PARTIAL', 'supportedPeriodTypes': supported, 'notReadyPeriodTypes': not_ready,
+            'reason': None if not not_ready else 'UPSTREAM_PERIOD_UNAVAILABLE', 'items': items}
 
 BUCKET_STRENGTH = {'SINGLE_FACTOR': 1, 'TWO_FACTOR': 2, 'MULTI_FACTOR': 3}
 

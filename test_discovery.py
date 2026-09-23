@@ -163,6 +163,36 @@ class DiscoveryTests(unittest.TestCase):
             discovery.write_outputs(stale, stale_context, td)
             self.assertEqual(json.loads((Path(td) / 'summary/latest.json').read_text())['status'], 'STALE')
 
+    def test_verified_multi_period_and_industry_membership_are_used(self):
+        inputs = self.inputs()
+        period_entry = {'status': 'OK', 'investors': [
+            {'investorType': 'FOREIGNER', 'buy': [{'code': '000001', 'accTradeVolume': 50, 'accTradeAmount': 500,
+                                                   'bizdateFrom': '20260917', 'bizdateTo': '20260923', 'toRankingAt': None}], 'sell': []},
+            {'investorType': 'ORGANIZATION', 'buy': [], 'sell': []}]}
+        inputs['investors']['multiPeriod'] = {'periods': {period: dict(period_entry) for period in ('WEEK', 'MONTH', 'THREE_MONTH')}}
+        inputs['membership'] = {'status': 'OK', 'generatedAt': CLOCK(),
+                                'byCode': {'000001': [{'id': '1', 'name': '강세'}]}}
+        latest, _ = discovery.build_outputs(inputs, self.config(), CLOCK)
+        candidate = next(x for x in latest['candidates'] if x['code'] == '000001')
+        self.assertEqual(latest['multiPeriodInvestorEvidence']['supportedPeriodTypes'], ['DAY', 'WEEK', 'MONTH', 'THREE_MONTH'])
+        self.assertEqual(candidate['industry'], {'status': 'READY', 'id': '1', 'name': '강세', 'state': 'BROAD_STRENGTH', 'contextSignal': 'BROAD_STRENGTH'})
+        periods = {x['periodType']: x for x in latest['multiPeriodInvestorEvidence']['items'][0]['periods']}
+        self.assertEqual(periods['WEEK']['directions'][0]['accTradeAmount'], 500)
+        self.assertNotIn('netBuy', periods['WEEK']['directions'][0])
+
+    def test_membership_error_falls_back_to_not_ready(self):
+        inputs = self.inputs(); inputs['membership'] = {'status': 'ERROR', 'reason': 'UPSTREAM_ERROR'}
+        latest, _ = discovery.build_outputs(inputs, self.config(), CLOCK)
+        self.assertEqual(latest['industryMembership']['status'], 'ERROR')
+        self.assertEqual(latest['candidates'][0]['industry']['status'], 'NOT_READY')
+
+    def test_stale_membership_falls_back_to_not_ready(self):
+        inputs = self.inputs(); inputs['membership'] = {'status': 'OK', 'generatedAt': '2026-09-22T09:00:00+09:00',
+                                                        'byCode': {'000001': [{'id': '1', 'name': '강세'}]}}
+        latest, _ = discovery.build_outputs(inputs, self.config(), CLOCK)
+        self.assertEqual(latest['industryMembership']['reason'], 'STALE_CACHE')
+        self.assertEqual(latest['candidates'][0]['industry']['status'], 'NOT_READY')
+
     def test_summary_industry_context_change(self):
         latest, context = discovery.build_outputs(self.inputs(), self.config(), CLOCK)
         earlier = dict(context, industries=[dict(row) for row in context['industries']])
