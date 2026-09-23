@@ -8,8 +8,9 @@ It consumes production JSON from `hanull01/naver-krx-universe-relay`; it does no
 the unique KST snapshots already stored in `data/history/index.json`, candidate
 entry/exit and bucket changes, caution deltas, industry-breadth deltas, and raw
 DAY investor-ranking evidence. It is descriptive research context, never a rank
-or recommendation.  Unverified NAVER multi-period investor and industry-member
-contracts are deliberately emitted as `NOT_READY` rather than guessed.
+or recommendation. Verified WEEK/MONTH/THREE_MONTH and 24-hour cached industry
+membership enrich candidates only when current; missing, partial, error, or stale
+inputs are deliberately emitted as `NOT_READY` rather than guessed.
 
 ```bash
 python3 discovery.py all --no-write
