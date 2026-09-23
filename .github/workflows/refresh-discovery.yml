@@ -32,13 +32,31 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check KRX trading day
+        id: market_day
+        shell: bash
+        run: |
+          set +e
+          python krx_market_day.py
+          code=$?
+          if [ "$code" -eq 0 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping discovery refresh (closed market or unverifiable KRX calendar)."
+          fi
+          exit 0
+
       - name: Test discovery
-        run: python -m unittest test_discovery.py -v
+        if: steps.market_day.outputs.run == 'true'
+        run: python -m unittest test_discovery.py test_krx_market_day.py -v
 
       - name: Build latest and history
+        if: steps.market_day.outputs.run == 'true'
         run: python discovery.py all
 
       - name: Commit discovery outputs
+        if: steps.market_day.outputs.run == 'true'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
