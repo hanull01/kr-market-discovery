@@ -4,6 +4,13 @@ Candidate discovery for further research using market-wide upstream snapshots. T
 
 It consumes production JSON from `hanull01/naver-krx-universe-relay`; it does not call NAVER market APIs and does not depend on a monitoring Universe.
 
+`data/summary/latest.json` is the report-facing, same-day compact view.  It records
+the unique KST snapshots already stored in `data/history/index.json`, candidate
+entry/exit and bucket changes, caution deltas, industry-breadth deltas, and raw
+DAY investor-ranking evidence. It is descriptive research context, never a rank
+or recommendation.  Unverified NAVER multi-period investor and industry-member
+contracts are deliberately emitted as `NOT_READY` rather than guessed.
+
 ```bash
 python3 discovery.py all --no-write
 python3 discovery.py all

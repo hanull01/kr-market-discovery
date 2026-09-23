@@ -112,5 +112,74 @@ class DiscoveryTests(unittest.TestCase):
             index = json.loads((root / 'history/index.json').read_text())
             self.assertEqual(len(index), 1); self.assertTrue((root / 'history/2026-09-24/100000/candidates.json').exists())
             self.assertTrue((root / 'candidates/latest.json').exists())
+            self.assertTrue((root / 'summary/latest.json').exists())
+
+    def snapshot(self, stamp, bucket='SINGLE_FACTOR', cautions=()):
+        return {'generatedAt': stamp, 'sourceGeneratedAt': stamp, 'status': 'OK', 'candidateCount': 1,
+                'enrichmentEligibleCount': bucket != 'SINGLE_FACTOR',
+                'bucketCounts': {'MULTI_FACTOR': bucket == 'MULTI_FACTOR', 'TWO_FACTOR': bucket == 'TWO_FACTOR', 'SINGLE_FACTOR': bucket == 'SINGLE_FACTOR'},
+                'candidates': [{'code': '000001', 'name': 'A', 'bucket': bucket, 'supportingFamilyCount': discovery.BUCKET_STRENGTH[bucket], 'cautionSignals': list(cautions)}]}
+
+    def test_summary_new_strengthening_weakening_exited_reentered_and_duplicate(self):
+        base = '2026-09-24T'
+        one = self.snapshot(base + '09:00:00+09:00')
+        two = self.snapshot(base + '09:15:00+09:00', 'TWO_FACTOR', ('BOTH_SELL',))
+        three = self.snapshot(base + '09:30:00+09:00', 'SINGLE_FACTOR')
+        context = {'freshness': {'status': 'OK'}, 'industries': []}
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            for item in (one, two, three): discovery.write_outputs(item, context, root)
+            # A repeated source timestamp must replace, not create a fourth snapshot.
+            discovery.write_outputs(three, context, root)
+            summary = json.loads((root / 'summary/latest.json').read_text())
+            self.assertEqual(summary['snapshotCountToday'], 3)
+            self.assertEqual(summary['changes']['WEAKENING'][0]['code'], '000001')
+            self.assertEqual(summary['cautionChanges']['resolved'][0]['signal'], 'BOTH_SELL')
+        # Explicit history fixtures cover a gap (REENTERED) and disappearance (EXITED).
+        active = self.snapshot(base + '10:00:00+09:00')
+        exited = dict(active, candidates=[], candidateCount=0)
+        changes, _ = discovery._candidate_changes([(one['sourceGeneratedAt'], one, context), (exited['sourceGeneratedAt'], exited, context)])
+        self.assertEqual(changes['EXITED'][0]['state'], 'EXITED')
+        changes, _ = discovery._candidate_changes([(one['sourceGeneratedAt'], one, context), (exited['sourceGeneratedAt'], exited, context), (active['sourceGeneratedAt'], active, context)])
+        self.assertEqual(changes['REENTERED'][0]['state'], 'REENTERED')
+
+    def test_summary_first_snapshot_new_and_not_ready_enrichment(self):
+        latest, context = discovery.build_outputs(self.inputs(), self.config(), CLOCK)
+        with tempfile.TemporaryDirectory() as td:
+            discovery.write_outputs(latest, context, td)
+            summary = json.loads((Path(td) / 'summary/latest.json').read_text())
+        self.assertEqual(summary['snapshotCountToday'], 1)
+        self.assertEqual(len(summary['changes']['NEW']), 3)
+        self.assertEqual(summary['industryContext']['membershipStatus'], 'NOT_READY')
+        self.assertEqual(summary['multiPeriodInvestorEvidence']['supportedPeriodTypes'], ['DAY'])
+        self.assertEqual(summary['multiPeriodInvestorEvidence']['notReadyPeriodTypes'], ['WEEK', 'MONTH', 'THREE_MONTH'])
+
+    def test_multi_period_raw_names_and_stale_summary(self):
+        latest, context = discovery.build_outputs(self.inputs(), self.config(), CLOCK)
+        item = latest['multiPeriodInvestorEvidence']['items'][0]['periods'][0]['directions'][0]
+        self.assertIn('accTradeVolume', item); self.assertIn('accTradeAmount', item)
+        stale, stale_context = discovery.build_outputs(self.inputs(), self.config(), lambda: '2026-09-24T11:00:00+09:00')
+        with tempfile.TemporaryDirectory() as td:
+            discovery.write_outputs(stale, stale_context, td)
+            self.assertEqual(json.loads((Path(td) / 'summary/latest.json').read_text())['status'], 'STALE')
+
+    def test_summary_industry_context_change(self):
+        latest, context = discovery.build_outputs(self.inputs(), self.config(), CLOCK)
+        earlier = dict(context, industries=[dict(row) for row in context['industries']])
+        earlier['industries'][0]['state'] = 'MIXED'
+        with tempfile.TemporaryDirectory() as td:
+            first = dict(latest, sourceGeneratedAt='2026-09-24T09:45:00+09:00', generatedAt='2026-09-24T09:45:00+09:00')
+            discovery.write_outputs(first, earlier, td)
+            discovery.write_outputs(latest, context, td)
+            changes = json.loads((Path(td) / 'summary/latest.json').read_text())['industryContext']['changes']
+        self.assertEqual(changes, [{'id': '1', 'name': '강세', 'from': 'MIXED', 'to': 'BROAD_STRENGTH'}])
+
+    def test_same_bucket_family_count_controls_strength(self):
+        first = self.snapshot('2026-09-24T09:00:00+09:00', 'MULTI_FACTOR')
+        second = self.snapshot('2026-09-24T09:15:00+09:00', 'MULTI_FACTOR')
+        second['candidates'][0]['supportingFamilyCount'] = 4
+        first['candidates'][0]['supportingFamilyCount'] = 3
+        changes, _ = discovery._candidate_changes([(first['sourceGeneratedAt'], first, {}), (second['sourceGeneratedAt'], second, {})])
+        self.assertEqual(changes['STRENGTHENING'][0]['code'], '000001')
 
 if __name__ == '__main__': unittest.main()

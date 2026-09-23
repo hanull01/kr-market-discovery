@@ -159,7 +159,11 @@ def build_outputs(inputs, config, clock=now):
     freshness = validate_inputs(inputs, config, clock)
     generated = clock()
     if freshness['status'] == 'STALE':
-        empty = {'generatedAt': generated, 'sourceGeneratedAt': freshness['sourceGeneratedAt'], 'status': 'STALE', 'candidateCount': 0, 'warnings': freshness['warnings'], 'candidates': []}
+        empty = {'generatedAt': generated, 'sourceGeneratedAt': freshness['sourceGeneratedAt'], 'status': 'STALE', 'candidateCount': 0,
+                 'enrichmentEligibleCount': 0, 'bucketCounts': {'MULTI_FACTOR': 0, 'TWO_FACTOR': 0, 'SINGLE_FACTOR': 0},
+                 'warnings': freshness['warnings'], 'candidates': [],
+                 'multiPeriodInvestorEvidence': {'status': 'NOT_READY', 'supportedPeriodTypes': [], 'notReadyPeriodTypes': ['DAY', 'WEEK', 'MONTH', 'THREE_MONTH']},
+                 'industryMembership': {'status': 'NOT_READY', 'reason': 'STALE_SOURCE'}}
         return empty, {'generatedAt': generated, 'sourceGeneratedAt': freshness['sourceGeneratedAt'], 'status': 'STALE', 'freshness': freshness, 'warnings': freshness['warnings']}
     candidates, counts, positions = build_candidates(inputs['rankings'], inputs['investors'], freshness['warnings'])
     context_industries = industry_context(inputs['industries'], config)
@@ -175,10 +179,124 @@ def build_outputs(inputs, config, clock=now):
                'weakIndustryCount': sum(r['state'] == 'WEAK' for r in context_industries), 'candidateCount': len(candidates),
                'enrichmentEligibleCount': sum(c['enrichmentEligible'] for c in candidates), 'bucketCounts': bucket_counts,
                'cautionCounts': caution_counts, 'warnings': freshness['warnings'], 'industries': context_industries}
+    # The relay currently supplies a verified DAY ranking only.  Keep the raw
+    # amount/volume names in candidate evidence; do not infer a net-buy value.
+    multi_period = build_multi_period_evidence(candidates)
+    for candidate in candidates:
+        candidate['industry'] = {'status': 'NOT_READY', 'reason': 'NAVER_MEMBER_CONTRACT_UNVERIFIED',
+                                 'id': None, 'name': None, 'state': None, 'contextSignal': 'NOT_READY'}
     latest = {'generatedAt': generated, 'sourceGeneratedAt': freshness['sourceGeneratedAt'], 'status': freshness['status'], 'candidateCount': len(candidates),
               'enrichmentEligibleCount': sum(c['enrichmentEligible'] for c in candidates), 'bucketCounts': bucket_counts,
               'cautionCounts': caution_counts, 'warnings': freshness['warnings'], 'candidates': candidates}
+    latest['multiPeriodInvestorEvidence'] = multi_period
+    latest['industryMembership'] = {'status': 'NOT_READY', 'reason': 'NAVER_MEMBER_CONTRACT_UNVERIFIED'}
     return latest, context
+
+def build_multi_period_evidence(candidates):
+    """Describe only the periods actually available in the input contract.
+
+    WEEK/MONTH/THREE_MONTH deliberately remain unavailable until a live NAVER
+    contract is re-verified.  DAY is ranking direction evidence, not a claim
+    about a calculated net purchase amount.
+    """
+    items = []
+    for candidate in candidates:
+        day = [row for row in candidate['evidence']['investors'] if row.get('side') in ('BUY', 'SELL')]
+        if day:
+            items.append({'code': candidate['code'], 'name': candidate['name'], 'periods': [{'periodType': 'DAY', 'directions': [
+                {'investorType': row.get('investorType'), 'side': row.get('side'), 'accTradeVolume': row.get('accTradeVolume'),
+                 'accTradeAmount': row.get('accTradeAmount')} for row in day]}], 'alignment': 'DAY_ONLY'})
+    return {'status': 'PARTIAL', 'supportedPeriodTypes': ['DAY'], 'notReadyPeriodTypes': ['WEEK', 'MONTH', 'THREE_MONTH'],
+            'reason': 'NAVER_PERIOD_CONTRACT_UNVERIFIED', 'items': items}
+
+BUCKET_STRENGTH = {'SINGLE_FACTOR': 1, 'TWO_FACTOR': 2, 'MULTI_FACTOR': 3}
+
+def _today_history(root, source_time):
+    """Read unique KST snapshots from the index; ignore duplicate source times."""
+    root, day = Path(root), parse_time(source_time).astimezone(KST).strftime('%Y-%m-%d')
+    try: index = read_json(str(root / 'history' / 'index.json'))
+    except InputError: return []
+    seen, snapshots = set(), []
+    for entry in sorted((row for row in index if isinstance(row, dict)), key=lambda row: row.get('sourceGeneratedAt', '')):
+        stamp = entry.get('sourceGeneratedAt')
+        if stamp in seen or not stamp: continue
+        try:
+            if parse_time(stamp).astimezone(KST).strftime('%Y-%m-%d') != day: continue
+            base = root / entry['path']
+            snapshots.append((stamp, read_json(str(base / 'candidates.json')), read_json(str(base / 'market-context.json'))))
+            seen.add(stamp)
+        except (KeyError, InputError):
+            continue
+    return snapshots
+
+def _candidate_changes(snapshots):
+    all_codes, tracks = set(), {}
+    for index, (stamp, latest, _) in enumerate(snapshots):
+        active = {row.get('code'): row for row in latest.get('candidates', []) if row.get('code')}
+        all_codes.update(active)
+        for code, row in active.items():
+            track = tracks.setdefault(code, {'code': code, 'name': row.get('name'), 'appearances': [], 'rows': []})
+            track['appearances'].append(index); track['rows'].append((stamp, row))
+    current = {row.get('code'): row for row in snapshots[-1][1].get('candidates', []) if row.get('code')} if snapshots else {}
+    changes = {name: [] for name in ('NEW', 'PERSISTENT', 'STRENGTHENING', 'WEAKENING', 'EXITED', 'REENTERED')}
+    details = {}
+    for code in sorted(all_codes):
+        track, appeared = tracks[code], tracks[code]['appearances']
+        active = code in current
+        first, last = track['rows'][0][0], track['rows'][-1][0]
+        consecutive = 0
+        for position in reversed(appeared):
+            if position == appeared[-1] - consecutive: consecutive += 1
+            else: break
+        if not active: state = 'EXITED'
+        elif len(appeared) == 1: state = 'NEW'
+        elif any(b - a > 1 for a, b in zip(appeared, appeared[1:])): state = 'REENTERED'
+        else:
+            previous = track['rows'][-2][1]
+            # Bucket is the primary ordinal (MULTI > TWO > SINGLE); the
+            # supporting-family count resolves changes within the same bucket.
+            current_strength = (BUCKET_STRENGTH.get(current[code].get('bucket'), 0), current[code].get('supportingFamilyCount') or 0)
+            previous_strength = (BUCKET_STRENGTH.get(previous.get('bucket'), 0), previous.get('supportingFamilyCount') or 0)
+            state = 'STRENGTHENING' if current_strength > previous_strength else 'WEAKENING' if current_strength < previous_strength else 'PERSISTENT'
+        row = current.get(code, track['rows'][-1][1])
+        detail = {'code': code, 'name': row.get('name'), 'state': state, 'firstSeenAt': first, 'lastSeenAt': last,
+                  'consecutiveSnapshotCount': consecutive, 'appearanceCountToday': len(appeared), 'active': active,
+                  'bucket': row.get('bucket'), 'supportingFamilyCount': row.get('supportingFamilyCount'),
+                  'cautionSignals': row.get('cautionSignals', [])}
+        details[code] = detail; changes[state].append(detail)
+    return changes, details
+
+def build_summary(latest, context, output_dir):
+    snapshots = _today_history(output_dir, latest['sourceGeneratedAt'])
+    # write_outputs calls this after recording the current snapshot; fall back
+    # for callers building an in-memory/no-history sample.
+    if not snapshots: snapshots = [(latest['sourceGeneratedAt'], latest, context)]
+    changes, details = _candidate_changes(snapshots)
+    current, previous = snapshots[-1][1], snapshots[-2][1] if len(snapshots) > 1 else {'candidates': []}
+    old = {row.get('code'): row for row in previous.get('candidates', [])}
+    new_caution, resolved = [], []
+    for code, row in {r.get('code'): r for r in current.get('candidates', [])}.items():
+        before, after = set(old.get(code, {}).get('cautionSignals', [])), set(row.get('cautionSignals', []))
+        for signal in sorted(after - before): new_caution.append({'code': code, 'name': row.get('name'), 'signal': signal})
+        for signal in sorted(before - after): resolved.append({'code': code, 'name': row.get('name'), 'signal': signal})
+    previous_context = snapshots[-2][2] if len(snapshots) > 1 else {}
+    before_industry = {row.get('id'): row.get('state') for row in previous_context.get('industries', [])}
+    industry_changes = [{'id': row.get('id'), 'name': row.get('name'), 'from': before_industry.get(row.get('id')), 'to': row.get('state')}
+                        for row in context.get('industries', []) if before_industry.get(row.get('id')) not in (None, row.get('state'))]
+    bucket_before = previous.get('bucketCounts', {})
+    bucket_change = {key: latest.get('bucketCounts', {}).get(key, 0) - bucket_before.get(key, 0)
+                     for key in ('MULTI_FACTOR', 'TWO_FACTOR', 'SINGLE_FACTOR')}
+    highlights = []
+    for label in ('NEW', 'REENTERED', 'STRENGTHENING', 'WEAKENING', 'EXITED'):
+        for item in changes[label]: highlights.append({'reasonType': label, 'code': item['code'], 'name': item['name'],
+            'evidence': {'bucket': item['bucket'], 'supportingFamilyCount': item['supportingFamilyCount'], 'active': item['active']}})
+    return {'generatedAt': latest['generatedAt'], 'sourceGeneratedAt': latest['sourceGeneratedAt'], 'status': latest['status'],
+            'freshness': context.get('freshness'), 'snapshotCountToday': len(snapshots), 'candidateCount': {'current': latest['candidateCount'], 'change': latest['candidateCount'] - previous.get('candidateCount', 0)},
+            'enrichmentEligibleCount': {'current': latest['enrichmentEligibleCount'], 'change': latest['enrichmentEligibleCount'] - previous.get('enrichmentEligibleCount', 0)},
+            'bucketCounts': {'current': latest.get('bucketCounts', {}), 'change': bucket_change},
+            'changes': changes, 'persistentCandidates': changes['PERSISTENT'], 'cautionChanges': {'new': new_caution, 'resolved': resolved},
+            'industryContext': {'membershipStatus': latest.get('industryMembership', {}).get('status'), 'changes': industry_changes},
+            'multiPeriodInvestorEvidence': latest.get('multiPeriodInvestorEvidence'), 'reportHighlights': highlights}
 
 def atomic_write(path, payload):
     path = Path(path); path.parent.mkdir(parents=True, exist_ok=True); temp = path.with_name(path.name + '.tmp')
@@ -203,6 +321,7 @@ def write_outputs(latest, context, output_dir):
                  'enrichmentEligibleCount': latest['enrichmentEligibleCount']}
         index = [row for row in index if row.get('sourceGeneratedAt') != identity] + [entry]
         atomic_write(index_path, sorted(index, key=lambda row: row['sourceGeneratedAt']))
+    atomic_write(root / 'summary' / 'latest.json', build_summary(latest, context, root))
 
 def load_config(path=ROOT / 'config' / 'discovery.json'): return read_json(str(path))
 def run(input_base=None, input_dir=None, output_dir=ROOT / 'data', no_write=False, reader=read_json, clock=now):
