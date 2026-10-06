@@ -1,44 +1,113 @@
 {
-  "generatedAt": "2026-10-06T09:53:38.715392+09:00",
-  "sourceGeneratedAt": "2026-10-06T09:33:30.840826+09:00",
-  "status": "OK",
+  "generatedAt": "2026-10-06T10:19:08.641165+09:00",
+  "sourceGeneratedAt": "2026-10-06T10:04:26.608375+09:00",
+  "status": "PARTIAL",
   "freshness": {
-    "status": "OK",
-    "sourceGeneratedAt": "2026-10-06T09:33:30.840826+09:00",
-    "ageMinutes": 20.13,
-    "warnings": []
+    "status": "PARTIAL",
+    "sourceGeneratedAt": "2026-10-06T10:04:26.608375+09:00",
+    "ageMinutes": 14.7,
+    "warnings": [
+      "PARTIAL_SOURCE_DATA"
+    ]
   },
-  "snapshotCountToday": 1,
+  "snapshotCountToday": 2,
   "candidateCount": {
-    "current": 72,
-    "change": 72
+    "current": 73,
+    "change": 1
   },
   "enrichmentEligibleCount": {
     "current": 25,
-    "change": 25
+    "change": 0
   },
   "bucketCounts": {
     "current": {
-      "MULTI_FACTOR": 3,
-      "TWO_FACTOR": 22,
-      "SINGLE_FACTOR": 47
+      "MULTI_FACTOR": 4,
+      "TWO_FACTOR": 21,
+      "SINGLE_FACTOR": 48
     },
     "change": {
-      "MULTI_FACTOR": 3,
-      "TWO_FACTOR": 22,
-      "SINGLE_FACTOR": 47
+      "MULTI_FACTOR": 1,
+      "TWO_FACTOR": -1,
+      "SINGLE_FACTOR": 1
     }
   },
   "changes": {
     "NEW": [
       {
-        "code": "000150",
-        "name": "두산",
+        "code": "001820",
+        "name": "삼화콘덴서",
         "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "firstSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
         "consecutiveSnapshotCount": 1,
         "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "115610",
+        "name": "이미지스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "340450",
+        "name": "지씨지놈",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "354320",
+        "name": "알멕",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "479960",
+        "name": "위너스일렉",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      }
+    ],
+    "PERSISTENT": [
+      {
+        "code": "000150",
+        "name": "두산",
+        "state": "PERSISTENT",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -49,11 +118,11 @@
       {
         "code": "000250",
         "name": "삼천당제약",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -62,11 +131,11 @@
       {
         "code": "000660",
         "name": "SK하이닉스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -78,11 +147,11 @@
       {
         "code": "002200",
         "name": "한국수출포장",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -91,11 +160,11 @@
       {
         "code": "003580",
         "name": "HLB글로벌",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -104,11 +173,11 @@
       {
         "code": "005030",
         "name": "부산주공",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -117,24 +186,11 @@
       {
         "code": "005110",
         "name": "한창",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "cautionSignals": []
-      },
-      {
-        "code": "005160",
-        "name": "동국산업",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -143,11 +199,11 @@
       {
         "code": "005930",
         "name": "삼성전자",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -159,11 +215,11 @@
       {
         "code": "005935",
         "name": "삼성전자우",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -176,11 +232,11 @@
       {
         "code": "006120",
         "name": "SK디스커버리",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -189,11 +245,11 @@
       {
         "code": "006400",
         "name": "삼성SDI",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -202,11 +258,11 @@
       {
         "code": "007660",
         "name": "이수페타시스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -215,11 +271,11 @@
       {
         "code": "008970",
         "name": "KBI동양철관",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -228,11 +284,11 @@
       {
         "code": "009150",
         "name": "삼성전기",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -241,11 +297,11 @@
       {
         "code": "010170",
         "name": "대한광통신",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -254,11 +310,11 @@
       {
         "code": "011070",
         "name": "LG이노텍",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -269,39 +325,24 @@
       {
         "code": "018880",
         "name": "한온시스템",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "cautionSignals": [
-          "FOREIGN_SELL"
-        ]
-      },
-      {
-        "code": "024850",
-        "name": "HLB이노베이션",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
         "cautionSignals": []
       },
       {
-        "code": "027040",
-        "name": "서울전자통신",
-        "state": "NEW",
+        "code": "024850",
+        "name": "HLB이노베이션",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -310,11 +351,11 @@
       {
         "code": "027360",
         "name": "아주IB투자",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -323,11 +364,11 @@
       {
         "code": "028300",
         "name": "HLB",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "MULTI_FACTOR",
         "supportingFamilyCount": 4,
@@ -336,39 +377,11 @@
       {
         "code": "031980",
         "name": "피에스케이홀딩스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "cautionSignals": []
-      },
-      {
-        "code": "036540",
-        "name": "SFA반도체",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "cautionSignals": [
-          "FOREIGN_SELL"
-        ]
-      },
-      {
-        "code": "036930",
-        "name": "주성엔지니어링",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -377,11 +390,11 @@
       {
         "code": "042510",
         "name": "라온시큐어",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -390,11 +403,11 @@
       {
         "code": "046210",
         "name": "HLB파나진",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -403,11 +416,11 @@
       {
         "code": "046970",
         "name": "우리로",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -416,11 +429,11 @@
       {
         "code": "047920",
         "name": "HLB제약",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -429,11 +442,11 @@
       {
         "code": "051160",
         "name": "지어소프트",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -442,11 +455,11 @@
       {
         "code": "053800",
         "name": "안랩",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -455,11 +468,11 @@
       {
         "code": "065770",
         "name": "CS",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -468,11 +481,11 @@
       {
         "code": "066570",
         "name": "LG전자",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -481,37 +494,24 @@
       {
         "code": "067630",
         "name": "HLB생명과학",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
         "cautionSignals": []
       },
       {
-        "code": "067920",
-        "name": "이글루",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "cautionSignals": []
-      },
-      {
         "code": "069540",
         "name": "빛과전자",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "MULTI_FACTOR",
         "supportingFamilyCount": 3,
@@ -520,24 +520,11 @@
       {
         "code": "080220",
         "name": "제주반도체",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "cautionSignals": []
-      },
-      {
-        "code": "100590",
-        "name": "머큐리",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -546,11 +533,11 @@
       {
         "code": "105740",
         "name": "디케이락",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -559,11 +546,11 @@
       {
         "code": "109820",
         "name": "진매트릭스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -572,11 +559,11 @@
       {
         "code": "115450",
         "name": "HLB테라퓨틱스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -585,11 +572,11 @@
       {
         "code": "136540",
         "name": "윈스테크넷",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -598,11 +585,11 @@
       {
         "code": "140430",
         "name": "카티스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -611,11 +598,11 @@
       {
         "code": "144960",
         "name": "뉴파워프라즈마",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -624,11 +611,11 @@
       {
         "code": "150900",
         "name": "파수AI",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -637,11 +624,11 @@
       {
         "code": "158430",
         "name": "아톤",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -650,11 +637,11 @@
       {
         "code": "159010",
         "name": "아스플로",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -663,11 +650,11 @@
       {
         "code": "170790",
         "name": "파이오링크",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -676,11 +663,11 @@
       {
         "code": "184230",
         "name": "SGA솔루션즈",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -689,11 +676,11 @@
       {
         "code": "187420",
         "name": "HLB제넥스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -702,37 +689,24 @@
       {
         "code": "192650",
         "name": "드림텍",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
         "cautionSignals": []
       },
       {
-        "code": "196300",
-        "name": "HLB펩",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "cautionSignals": []
-      },
-      {
         "code": "200350",
         "name": "아티스트스튜디오",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -741,11 +715,11 @@
       {
         "code": "203650",
         "name": "드림시큐리티",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -754,11 +728,11 @@
       {
         "code": "217590",
         "name": "티엠씨",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -769,11 +743,11 @@
       {
         "code": "222800",
         "name": "심텍",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -782,11 +756,11 @@
       {
         "code": "247660",
         "name": "나노씨엠에스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -795,11 +769,11 @@
       {
         "code": "250930",
         "name": "예선테크",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -808,11 +782,11 @@
       {
         "code": "258790",
         "name": "소프트캠프",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -821,11 +795,11 @@
       {
         "code": "263860",
         "name": "지니언스",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -834,11 +808,11 @@
       {
         "code": "278650",
         "name": "HLB바이오스텝",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -847,11 +821,11 @@
       {
         "code": "290270",
         "name": "휴네시온",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -860,24 +834,11 @@
       {
         "code": "321370",
         "name": "센서뷰",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
-        "active": true,
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "cautionSignals": []
-      },
-      {
-        "code": "347700",
-        "name": "스피어",
-        "state": "NEW",
-        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -886,11 +847,11 @@
       {
         "code": "353200",
         "name": "대덕전자",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -899,11 +860,11 @@
       {
         "code": "356680",
         "name": "엑스게이트",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "MULTI_FACTOR",
         "supportingFamilyCount": 3,
@@ -912,11 +873,11 @@
       {
         "code": "356890",
         "name": "싸이버원",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -925,11 +886,11 @@
       {
         "code": "402340",
         "name": "SK스퀘어",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -938,11 +899,11 @@
       {
         "code": "403870",
         "name": "HPSP",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -953,11 +914,11 @@
       {
         "code": "411080",
         "name": "샌즈랩",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -966,11 +927,11 @@
       {
         "code": "434480",
         "name": "모니터랩",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -979,97 +940,1036 @@
       {
         "code": "480370",
         "name": "씨케이솔루션",
-        "state": "NEW",
+        "state": "PERSISTENT",
         "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
-        "consecutiveSnapshotCount": 1,
-        "appearanceCountToday": 1,
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
         "active": true,
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
         "cautionSignals": []
       }
     ],
-    "PERSISTENT": [],
-    "STRENGTHENING": [],
-    "WEAKENING": [],
-    "EXITED": [],
+    "STRENGTHENING": [
+      {
+        "code": "005160",
+        "name": "동국산업",
+        "state": "STRENGTHENING",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "036540",
+        "name": "SFA반도체",
+        "state": "STRENGTHENING",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
+        "active": true,
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 3,
+        "cautionSignals": []
+      },
+      {
+        "code": "036930",
+        "name": "주성엔지니어링",
+        "state": "STRENGTHENING",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      }
+    ],
+    "WEAKENING": [
+      {
+        "code": "196300",
+        "name": "HLB펩",
+        "state": "WEAKENING",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+        "consecutiveSnapshotCount": 2,
+        "appearanceCountToday": 2,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      }
+    ],
+    "EXITED": [
+      {
+        "code": "027040",
+        "name": "서울전자통신",
+        "state": "EXITED",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": false,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "067920",
+        "name": "이글루",
+        "state": "EXITED",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": false,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "100590",
+        "name": "머큐리",
+        "state": "EXITED",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": false,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "347700",
+        "name": "스피어",
+        "state": "EXITED",
+        "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "lastSeenAt": "2026-10-06T09:33:30.840826+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": false,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      }
+    ],
     "REENTERED": []
   },
-  "persistentCandidates": [],
+  "persistentCandidates": [
+    {
+      "code": "000150",
+      "name": "두산",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": [
+        "INSTITUTION_SELL"
+      ]
+    },
+    {
+      "code": "000250",
+      "name": "삼천당제약",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": [
+        "BUY_SELL_CONFLICT",
+        "FOREIGN_SELL"
+      ]
+    },
+    {
+      "code": "002200",
+      "name": "한국수출포장",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "003580",
+      "name": "HLB글로벌",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "005030",
+      "name": "부산주공",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "005110",
+      "name": "한창",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": [
+        "BUY_SELL_CONFLICT",
+        "FOREIGN_SELL"
+      ]
+    },
+    {
+      "code": "005935",
+      "name": "삼성전자우",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": [
+        "BOTH_SELL",
+        "FOREIGN_SELL",
+        "INSTITUTION_SELL"
+      ]
+    },
+    {
+      "code": "006120",
+      "name": "SK디스커버리",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "007660",
+      "name": "이수페타시스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "008970",
+      "name": "KBI동양철관",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "011070",
+      "name": "LG이노텍",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": [
+        "INSTITUTION_SELL"
+      ]
+    },
+    {
+      "code": "018880",
+      "name": "한온시스템",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "024850",
+      "name": "HLB이노베이션",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "027360",
+      "name": "아주IB투자",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "028300",
+      "name": "HLB",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "MULTI_FACTOR",
+      "supportingFamilyCount": 4,
+      "cautionSignals": []
+    },
+    {
+      "code": "031980",
+      "name": "피에스케이홀딩스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "042510",
+      "name": "라온시큐어",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "046210",
+      "name": "HLB파나진",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "046970",
+      "name": "우리로",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "047920",
+      "name": "HLB제약",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "051160",
+      "name": "지어소프트",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "053800",
+      "name": "안랩",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "065770",
+      "name": "CS",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "067630",
+      "name": "HLB생명과학",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "069540",
+      "name": "빛과전자",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "MULTI_FACTOR",
+      "supportingFamilyCount": 3,
+      "cautionSignals": []
+    },
+    {
+      "code": "080220",
+      "name": "제주반도체",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "105740",
+      "name": "디케이락",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "109820",
+      "name": "진매트릭스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "115450",
+      "name": "HLB테라퓨틱스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "136540",
+      "name": "윈스테크넷",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "140430",
+      "name": "카티스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "144960",
+      "name": "뉴파워프라즈마",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "150900",
+      "name": "파수AI",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "158430",
+      "name": "아톤",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "159010",
+      "name": "아스플로",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "170790",
+      "name": "파이오링크",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "184230",
+      "name": "SGA솔루션즈",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "187420",
+      "name": "HLB제넥스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "192650",
+      "name": "드림텍",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "200350",
+      "name": "아티스트스튜디오",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "203650",
+      "name": "드림시큐리티",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "217590",
+      "name": "티엠씨",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": [
+        "FOREIGN_SELL"
+      ]
+    },
+    {
+      "code": "222800",
+      "name": "심텍",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "247660",
+      "name": "나노씨엠에스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "250930",
+      "name": "예선테크",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "258790",
+      "name": "소프트캠프",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "263860",
+      "name": "지니언스",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "278650",
+      "name": "HLB바이오스텝",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "290270",
+      "name": "휴네시온",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "321370",
+      "name": "센서뷰",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "353200",
+      "name": "대덕전자",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "356680",
+      "name": "엑스게이트",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "MULTI_FACTOR",
+      "supportingFamilyCount": 3,
+      "cautionSignals": []
+    },
+    {
+      "code": "356890",
+      "name": "싸이버원",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": [
+        "FOREIGN_SELL"
+      ]
+    },
+    {
+      "code": "411080",
+      "name": "샌즈랩",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "TWO_FACTOR",
+      "supportingFamilyCount": 2,
+      "cautionSignals": []
+    },
+    {
+      "code": "434480",
+      "name": "모니터랩",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    },
+    {
+      "code": "480370",
+      "name": "씨케이솔루션",
+      "state": "PERSISTENT",
+      "firstSeenAt": "2026-10-06T09:33:30.840826+09:00",
+      "lastSeenAt": "2026-10-06T10:04:26.608375+09:00",
+      "consecutiveSnapshotCount": 2,
+      "appearanceCountToday": 2,
+      "active": true,
+      "bucket": "SINGLE_FACTOR",
+      "supportingFamilyCount": 1,
+      "cautionSignals": []
+    }
+  ],
   "cautionChanges": {
-    "new": [
-      {
-        "code": "005930",
-        "name": "삼성전자",
-        "signal": "BUY_SELL_CONFLICT"
-      },
-      {
-        "code": "005930",
-        "name": "삼성전자",
-        "signal": "FOREIGN_SELL"
-      },
+    "new": [],
+    "resolved": [
       {
         "code": "036540",
         "name": "SFA반도체",
         "signal": "FOREIGN_SELL"
       },
       {
-        "code": "217590",
-        "name": "티엠씨",
-        "signal": "FOREIGN_SELL"
-      },
-      {
-        "code": "000660",
-        "name": "SK하이닉스",
-        "signal": "BUY_SELL_CONFLICT"
-      },
-      {
-        "code": "000660",
-        "name": "SK하이닉스",
-        "signal": "FOREIGN_SELL"
-      },
-      {
         "code": "018880",
         "name": "한온시스템",
         "signal": "FOREIGN_SELL"
-      },
-      {
-        "code": "005935",
-        "name": "삼성전자우",
-        "signal": "BOTH_SELL"
-      },
-      {
-        "code": "005935",
-        "name": "삼성전자우",
-        "signal": "FOREIGN_SELL"
-      },
-      {
-        "code": "005935",
-        "name": "삼성전자우",
-        "signal": "INSTITUTION_SELL"
-      },
-      {
-        "code": "000150",
-        "name": "두산",
-        "signal": "INSTITUTION_SELL"
-      },
-      {
-        "code": "011070",
-        "name": "LG이노텍",
-        "signal": "INSTITUTION_SELL"
-      },
-      {
-        "code": "403870",
-        "name": "HPSP",
-        "signal": "FOREIGN_SELL"
       }
-    ],
-    "resolved": []
+    ]
   },
   "industryContext": {
-    "membershipStatus": "PARTIAL",
-    "changes": []
+    "membershipStatus": "OK",
+    "changes": [
+      {
+        "id": "287",
+        "name": "소프트웨어",
+        "from": "BROAD_STRENGTH",
+        "to": "MIXED"
+      },
+      {
+        "id": "276",
+        "name": "복합기업",
+        "from": "BROAD_STRENGTH",
+        "to": "MIXED"
+      },
+      {
+        "id": "306",
+        "name": "전기장비",
+        "from": "MIXED",
+        "to": "BROAD_STRENGTH"
+      },
+      {
+        "id": "304",
+        "name": "철강",
+        "from": "MIXED",
+        "to": "BROAD_STRENGTH"
+      },
+      {
+        "id": "286",
+        "name": "생물공학",
+        "from": "BROAD_STRENGTH",
+        "to": "MIXED"
+      },
+      {
+        "id": "267",
+        "name": "IT서비스",
+        "from": "BROAD_STRENGTH",
+        "to": "MIXED"
+      }
+    ]
   },
   "multiPeriodInvestorEvidence": {
     "status": "OK",
@@ -1092,7 +1992,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "BUY",
-                "accTradeVolume": 100209,
+                "accTradeVolume": 388879,
                 "accTradeAmount": 0
               }
             ]
@@ -1175,13 +2075,96 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "BUY",
-                "accTradeVolume": 547115,
+                "accTradeVolume": 558494,
                 "accTradeAmount": 0
               }
             ]
           }
         ],
         "alignment": "DAY_ONLY"
+      },
+      {
+        "code": "036540",
+        "name": "SFA반도체",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 165975,
+                "accTradeAmount": 0
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 7,
+                "accTradeVolume": 4421830,
+                "accTradeAmount": 48023885000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 29,
+                "accTradeVolume": -3858552,
+                "accTradeAmount": -41460955000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 9,
+                "accTradeVolume": 15350798,
+                "accTradeAmount": 147502448000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 43,
+                "accTradeVolume": -5254344,
+                "accTradeAmount": -60032789000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 44,
+                "accTradeVolume": 9860399,
+                "accTradeAmount": 116519724000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
       },
       {
         "code": "356680",
@@ -1211,7 +2194,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "SELL",
-                "accTradeVolume": -91182,
+                "accTradeVolume": -347329,
                 "accTradeAmount": 0
               },
               {
@@ -1301,6 +2284,24 @@
         "alignment": "MULTI_PERIOD"
       },
       {
+        "code": "008970",
+        "name": "KBI동양철관",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 317566,
+                "accTradeAmount": 0
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      },
+      {
         "code": "009150",
         "name": "삼성전기",
         "periods": [
@@ -1384,6 +2385,99 @@
                 "derivedRank": 75,
                 "accTradeVolume": 89679,
                 "accTradeAmount": 78897318000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "036930",
+        "name": "주성엔지니어링",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 68885,
+                "accTradeAmount": 0
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 4,
+                "accTradeVolume": 291052,
+                "accTradeAmount": 63426057000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 9,
+                "accTradeVolume": 288790,
+                "accTradeAmount": 68484115000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 65,
+                "accTradeVolume": 199168,
+                "accTradeAmount": 25061102000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 9,
+                "accTradeVolume": 1171911,
+                "accTradeAmount": 271303538000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 37,
+                "accTradeVolume": 1022204,
+                "accTradeAmount": 144692976000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 30,
+                "accTradeVolume": 847339,
+                "accTradeAmount": 223455451000,
                 "bizdateFrom": "20260707",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
@@ -1557,140 +2651,6 @@
         "alignment": "MULTI_PERIOD"
       },
       {
-        "code": "036540",
-        "name": "SFA반도체",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "accTradeVolume": -24058,
-                "accTradeAmount": 0
-              }
-            ]
-          },
-          {
-            "periodType": "WEEK",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 7,
-                "accTradeVolume": 4421830,
-                "accTradeAmount": 48023885000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "SELL",
-                "derivedRank": 29,
-                "accTradeVolume": -3858552,
-                "accTradeAmount": -41460955000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 9,
-                "accTradeVolume": 15350798,
-                "accTradeAmount": 147502448000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "SELL",
-                "derivedRank": 43,
-                "accTradeVolume": -5254344,
-                "accTradeAmount": -60032789000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "THREE_MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 44,
-                "accTradeVolume": 9860399,
-                "accTradeAmount": 116519724000,
-                "bizdateFrom": "20260707",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
-        "code": "008970",
-        "name": "KBI동양철관",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "accTradeVolume": 207082,
-                "accTradeAmount": 0
-              }
-            ]
-          }
-        ],
-        "alignment": "DAY_ONLY"
-      },
-      {
-        "code": "027360",
-        "name": "아주IB투자",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "accTradeVolume": 249679,
-                "accTradeAmount": 0
-              }
-            ]
-          },
-          {
-            "periodType": "THREE_MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "derivedRank": 99,
-                "accTradeVolume": -8901422,
-                "accTradeAmount": -35486245000,
-                "bizdateFrom": "20260707",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
         "code": "007660",
         "name": "이수페타시스",
         "periods": [
@@ -1700,7 +2660,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "BUY",
-                "accTradeVolume": 78364,
+                "accTradeVolume": 150861,
                 "accTradeAmount": 0
               }
             ]
@@ -1774,6 +2734,39 @@
                 "derivedRank": 7,
                 "accTradeVolume": 4083309,
                 "accTradeAmount": 437177306000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "027360",
+        "name": "아주IB투자",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 436402,
+                "accTradeAmount": 0
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 99,
+                "accTradeVolume": -8901422,
+                "accTradeAmount": -35486245000,
                 "bizdateFrom": "20260707",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
@@ -1886,7 +2879,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "SELL",
-                "accTradeVolume": -103296,
+                "accTradeVolume": -142870,
                 "accTradeAmount": 0
               }
             ]
@@ -1993,39 +2986,6 @@
         "alignment": "MULTI_PERIOD"
       },
       {
-        "code": "347700",
-        "name": "스피어",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "accTradeVolume": 41274,
-                "accTradeAmount": 0
-              }
-            ]
-          },
-          {
-            "periodType": "WEEK",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 92,
-                "accTradeVolume": 277101,
-                "accTradeAmount": 6477979000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
         "code": "000660",
         "name": "SK하이닉스",
         "periods": [
@@ -2035,7 +2995,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "SELL",
-                "accTradeVolume": -65047,
+                "accTradeVolume": -141940,
                 "accTradeAmount": 0
               },
               {
@@ -2147,233 +3107,6 @@
         "alignment": "DAY_ONLY"
       },
       {
-        "code": "018880",
-        "name": "한온시스템",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "accTradeVolume": -124997,
-                "accTradeAmount": 0
-              }
-            ]
-          },
-          {
-            "periodType": "WEEK",
-            "directions": [
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 44,
-                "accTradeVolume": 6080860,
-                "accTradeAmount": 22192685000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "derivedRank": 98,
-                "accTradeVolume": -6672550,
-                "accTradeAmount": -22629881000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 90,
-                "accTradeVolume": 8454799,
-                "accTradeAmount": 30610612000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "THREE_MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "derivedRank": 97,
-                "accTradeVolume": -10875016,
-                "accTradeAmount": -36662341000,
-                "bizdateFrom": "20260707",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
-        "code": "036930",
-        "name": "주성엔지니어링",
-        "periods": [
-          {
-            "periodType": "WEEK",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 4,
-                "accTradeVolume": 291052,
-                "accTradeAmount": 63426057000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 9,
-                "accTradeVolume": 288790,
-                "accTradeAmount": 68484115000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 65,
-                "accTradeVolume": 199168,
-                "accTradeAmount": 25061102000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 9,
-                "accTradeVolume": 1171911,
-                "accTradeAmount": 271303538000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "THREE_MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 37,
-                "accTradeVolume": 1022204,
-                "accTradeAmount": 144692976000,
-                "bizdateFrom": "20260707",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 30,
-                "accTradeVolume": 847339,
-                "accTradeAmount": 223455451000,
-                "bizdateFrom": "20260707",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
-        "code": "222800",
-        "name": "심텍",
-        "periods": [
-          {
-            "periodType": "WEEK",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 5,
-                "accTradeVolume": 394713,
-                "accTradeAmount": 62498936000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "SELL",
-                "derivedRank": 33,
-                "accTradeVolume": -257268,
-                "accTradeAmount": -38754910000,
-                "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 27,
-                "accTradeVolume": 383349,
-                "accTradeAmount": 58012852000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 100,
-                "accTradeVolume": 157960,
-                "accTradeAmount": 27436498000,
-                "bizdateFrom": "20260903",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "THREE_MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 50,
-                "accTradeVolume": 839860,
-                "accTradeAmount": 94579573000,
-                "bizdateFrom": "20260707",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
         "code": "005935",
         "name": "삼성전자우",
         "periods": [
@@ -2383,7 +3116,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "SELL",
-                "accTradeVolume": -57876,
+                "accTradeVolume": -59922,
                 "accTradeAmount": 0
               },
               {
@@ -2463,6 +3196,140 @@
                 "derivedRank": 2,
                 "accTradeVolume": 3418827,
                 "accTradeAmount": 697777285000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "018880",
+        "name": "한온시스템",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 44,
+                "accTradeVolume": 6080860,
+                "accTradeAmount": 22192685000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 98,
+                "accTradeVolume": -6672550,
+                "accTradeAmount": -22629881000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 90,
+                "accTradeVolume": 8454799,
+                "accTradeAmount": 30610612000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 97,
+                "accTradeVolume": -10875016,
+                "accTradeAmount": -36662341000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "222800",
+        "name": "심텍",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 5,
+                "accTradeVolume": 394713,
+                "accTradeAmount": 62498936000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 33,
+                "accTradeVolume": -257268,
+                "accTradeAmount": -38754910000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 27,
+                "accTradeVolume": 383349,
+                "accTradeAmount": 58012852000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 100,
+                "accTradeVolume": 157960,
+                "accTradeAmount": 27436498000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 50,
+                "accTradeVolume": 839860,
+                "accTradeAmount": 94579573000,
                 "bizdateFrom": "20260707",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
@@ -2722,6 +3589,89 @@
         "alignment": "MULTI_PERIOD"
       },
       {
+        "code": "403870",
+        "name": "HPSP",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "accTradeVolume": -60985,
+                "accTradeAmount": 0
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 25,
+                "accTradeVolume": 437441,
+                "accTradeAmount": 22516334000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 6,
+                "accTradeVolume": 1360127,
+                "accTradeAmount": 88939102000,
+                "bizdateFrom": "20260928",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 14,
+                "accTradeVolume": 3977653,
+                "accTradeAmount": 237864758000,
+                "bizdateFrom": "20260903",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 76,
+                "accTradeVolume": 873111,
+                "accTradeAmount": 45725834000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 16,
+                "accTradeVolume": 6437534,
+                "accTradeAmount": 355061436000,
+                "bizdateFrom": "20260707",
+                "bizdateTo": "20261002",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
         "code": "011070",
         "name": "LG이노텍",
         "periods": [
@@ -2805,29 +3755,18 @@
         "alignment": "MULTI_PERIOD"
       },
       {
-        "code": "403870",
-        "name": "HPSP",
+        "code": "353200",
+        "name": "대덕전자",
         "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "accTradeVolume": -24030,
-                "accTradeAmount": 0
-              }
-            ]
-          },
           {
             "periodType": "WEEK",
             "directions": [
               {
                 "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 25,
-                "accTradeVolume": 437441,
-                "accTradeAmount": 22516334000,
+                "side": "SELL",
+                "derivedRank": 6,
+                "accTradeVolume": -792888,
+                "accTradeAmount": -106036977000,
                 "bizdateFrom": "20260928",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
@@ -2835,25 +3774,10 @@
               {
                 "investorType": "ORGANIZATION",
                 "side": "BUY",
-                "derivedRank": 6,
-                "accTradeVolume": 1360127,
-                "accTradeAmount": 88939102000,
+                "derivedRank": 3,
+                "accTradeVolume": 977138,
+                "accTradeAmount": 131370285000,
                 "bizdateFrom": "20260928",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 14,
-                "accTradeVolume": 3977653,
-                "accTradeAmount": 237864758000,
-                "bizdateFrom": "20260903",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
               }
@@ -2864,10 +3788,10 @@
             "directions": [
               {
                 "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 76,
-                "accTradeVolume": 873111,
-                "accTradeAmount": 45725834000,
+                "side": "SELL",
+                "derivedRank": 41,
+                "accTradeVolume": -221449,
+                "accTradeAmount": -120014034000,
                 "bizdateFrom": "20260707",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
@@ -2875,9 +3799,9 @@
               {
                 "investorType": "ORGANIZATION",
                 "side": "BUY",
-                "derivedRank": 16,
-                "accTradeVolume": 6437534,
-                "accTradeAmount": 355061436000,
+                "derivedRank": 65,
+                "accTradeVolume": -147081,
+                "accTradeAmount": 93664677000,
                 "bizdateFrom": "20260707",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
@@ -2950,29 +3874,34 @@
         "alignment": "MULTI_PERIOD"
       },
       {
-        "code": "353200",
-        "name": "대덕전자",
+        "code": "001820",
+        "name": "삼화콘덴서",
         "periods": [
           {
             "periodType": "WEEK",
             "directions": [
               {
                 "investorType": "FOREIGNER",
-                "side": "SELL",
-                "derivedRank": 6,
-                "accTradeVolume": -792888,
-                "accTradeAmount": -106036977000,
+                "side": "BUY",
+                "derivedRank": 13,
+                "accTradeVolume": 230925,
+                "accTradeAmount": 35875675000,
                 "bizdateFrom": "20260928",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
-              },
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
               {
-                "investorType": "ORGANIZATION",
+                "investorType": "FOREIGNER",
                 "side": "BUY",
-                "derivedRank": 3,
-                "accTradeVolume": 977138,
-                "accTradeAmount": 131370285000,
-                "bizdateFrom": "20260928",
+                "derivedRank": 28,
+                "accTradeVolume": 376372,
+                "accTradeAmount": 57782952000,
+                "bizdateFrom": "20260903",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
               }
@@ -2982,21 +3911,11 @@
             "periodType": "THREE_MONTH",
             "directions": [
               {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "derivedRank": 41,
-                "accTradeVolume": -221449,
-                "accTradeAmount": -120014034000,
-                "bizdateFrom": "20260707",
-                "bizdateTo": "20261002",
-                "toRankingAt": null
-              },
-              {
                 "investorType": "ORGANIZATION",
                 "side": "BUY",
-                "derivedRank": 65,
-                "accTradeVolume": -147081,
-                "accTradeAmount": 93664677000,
+                "derivedRank": 79,
+                "accTradeVolume": 666325,
+                "accTradeAmount": 74568296000,
                 "bizdateFrom": "20260707",
                 "bizdateTo": "20261002",
                 "toRankingAt": null
@@ -3011,8 +3930,8 @@
   "reportHighlights": [
     {
       "reasonType": "NEW",
-      "code": "000150",
-      "name": "두산",
+      "code": "001820",
+      "name": "삼화콘덴서",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -3021,8 +3940,8 @@
     },
     {
       "reasonType": "NEW",
-      "code": "000250",
-      "name": "삼천당제약",
+      "code": "115610",
+      "name": "이미지스",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -3031,8 +3950,8 @@
     },
     {
       "reasonType": "NEW",
-      "code": "000660",
-      "name": "SK하이닉스",
+      "code": "340450",
+      "name": "지씨지놈",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -3041,8 +3960,8 @@
     },
     {
       "reasonType": "NEW",
-      "code": "002200",
-      "name": "한국수출포장",
+      "code": "354320",
+      "name": "알멕",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -3051,28 +3970,8 @@
     },
     {
       "reasonType": "NEW",
-      "code": "003580",
-      "name": "HLB글로벌",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "005030",
-      "name": "부산주공",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "005110",
-      "name": "한창",
+      "code": "479960",
+      "name": "위너스일렉",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -3080,19 +3979,29 @@
       }
     },
     {
-      "reasonType": "NEW",
+      "reasonType": "STRENGTHENING",
       "code": "005160",
       "name": "동국산업",
       "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
         "active": true
       }
     },
     {
-      "reasonType": "NEW",
-      "code": "005930",
-      "name": "삼성전자",
+      "reasonType": "STRENGTHENING",
+      "code": "036540",
+      "name": "SFA반도체",
+      "evidence": {
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 3,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "STRENGTHENING",
+      "code": "036930",
+      "name": "주성엔지니어링",
       "evidence": {
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
@@ -3100,9 +4009,9 @@
       }
     },
     {
-      "reasonType": "NEW",
-      "code": "005935",
-      "name": "삼성전자우",
+      "reasonType": "WEAKENING",
+      "code": "196300",
+      "name": "HLB펩",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
@@ -3110,623 +4019,43 @@
       }
     },
     {
-      "reasonType": "NEW",
-      "code": "006120",
-      "name": "SK디스커버리",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "006400",
-      "name": "삼성SDI",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "007660",
-      "name": "이수페타시스",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "008970",
-      "name": "KBI동양철관",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "009150",
-      "name": "삼성전기",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "010170",
-      "name": "대한광통신",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "011070",
-      "name": "LG이노텍",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "018880",
-      "name": "한온시스템",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "024850",
-      "name": "HLB이노베이션",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
+      "reasonType": "EXITED",
       "code": "027040",
       "name": "서울전자통신",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
-        "active": true
+        "active": false
       }
     },
     {
-      "reasonType": "NEW",
-      "code": "027360",
-      "name": "아주IB투자",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "028300",
-      "name": "HLB",
-      "evidence": {
-        "bucket": "MULTI_FACTOR",
-        "supportingFamilyCount": 4,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "031980",
-      "name": "피에스케이홀딩스",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "036540",
-      "name": "SFA반도체",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "036930",
-      "name": "주성엔지니어링",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "042510",
-      "name": "라온시큐어",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "046210",
-      "name": "HLB파나진",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "046970",
-      "name": "우리로",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "047920",
-      "name": "HLB제약",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "051160",
-      "name": "지어소프트",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "053800",
-      "name": "안랩",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "065770",
-      "name": "CS",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "066570",
-      "name": "LG전자",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "067630",
-      "name": "HLB생명과학",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
+      "reasonType": "EXITED",
       "code": "067920",
       "name": "이글루",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
-        "active": true
+        "active": false
       }
     },
     {
-      "reasonType": "NEW",
-      "code": "069540",
-      "name": "빛과전자",
-      "evidence": {
-        "bucket": "MULTI_FACTOR",
-        "supportingFamilyCount": 3,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "080220",
-      "name": "제주반도체",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
+      "reasonType": "EXITED",
       "code": "100590",
       "name": "머큐리",
       "evidence": {
         "bucket": "SINGLE_FACTOR",
         "supportingFamilyCount": 1,
-        "active": true
+        "active": false
       }
     },
     {
-      "reasonType": "NEW",
-      "code": "105740",
-      "name": "디케이락",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "109820",
-      "name": "진매트릭스",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "115450",
-      "name": "HLB테라퓨틱스",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "136540",
-      "name": "윈스테크넷",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "140430",
-      "name": "카티스",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "144960",
-      "name": "뉴파워프라즈마",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "150900",
-      "name": "파수AI",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "158430",
-      "name": "아톤",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "159010",
-      "name": "아스플로",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "170790",
-      "name": "파이오링크",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "184230",
-      "name": "SGA솔루션즈",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "187420",
-      "name": "HLB제넥스",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "192650",
-      "name": "드림텍",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "196300",
-      "name": "HLB펩",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "200350",
-      "name": "아티스트스튜디오",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "203650",
-      "name": "드림시큐리티",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "217590",
-      "name": "티엠씨",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "222800",
-      "name": "심텍",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "247660",
-      "name": "나노씨엠에스",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "250930",
-      "name": "예선테크",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "258790",
-      "name": "소프트캠프",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "263860",
-      "name": "지니언스",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "278650",
-      "name": "HLB바이오스텝",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "290270",
-      "name": "휴네시온",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "321370",
-      "name": "센서뷰",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
+      "reasonType": "EXITED",
       "code": "347700",
       "name": "스피어",
       "evidence": {
         "bucket": "TWO_FACTOR",
         "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "353200",
-      "name": "대덕전자",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "356680",
-      "name": "엑스게이트",
-      "evidence": {
-        "bucket": "MULTI_FACTOR",
-        "supportingFamilyCount": 3,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "356890",
-      "name": "싸이버원",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "402340",
-      "name": "SK스퀘어",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "403870",
-      "name": "HPSP",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "411080",
-      "name": "샌즈랩",
-      "evidence": {
-        "bucket": "TWO_FACTOR",
-        "supportingFamilyCount": 2,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "434480",
-      "name": "모니터랩",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
-      }
-    },
-    {
-      "reasonType": "NEW",
-      "code": "480370",
-      "name": "씨케이솔루션",
-      "evidence": {
-        "bucket": "SINGLE_FACTOR",
-        "supportingFamilyCount": 1,
-        "active": true
+        "active": false
       }
     }
   ]
