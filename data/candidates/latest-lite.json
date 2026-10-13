@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-13T10:00:33.380597+09:00",
-  "sourceGeneratedAt": "2026-10-13T09:37:40.895769+09:00",
+  "generatedAt": "2026-10-13T10:22:11.967525+09:00",
+  "sourceGeneratedAt": "2026-10-13T10:09:16.709469+09:00",
   "status": "OK",
-  "candidateCount": 63,
+  "candidateCount": 62,
   "warnings": [],
   "candidates": [
     {
@@ -28,25 +28,12 @@
       "signals": [
         "HIGH_52WEEK",
         "HIGH_TRADING_VALUE",
-        "HIGH_VOLUME"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 1
-    },
-    {
-      "code": "015260",
-      "name": "에이엔피",
-      "bucket": "MULTI_FACTOR",
-      "familyCount": 3,
-      "signals": [
-        "FOREIGNER_BUY",
         "HIGH_VOLUME",
         "TOP_GAINER"
       ],
       "warnings": [],
-      "investorState": "FOREIGN_ONLY_BUY",
-      "bestRanking": 2
+      "investorState": "NONE",
+      "bestRanking": 1
     },
     {
       "code": "079650",
@@ -80,23 +67,22 @@
       "bestRanking": 6
     },
     {
-      "code": "030960",
-      "name": "양지사",
-      "bucket": "TWO_FACTOR",
-      "familyCount": 2,
+      "code": "015260",
+      "name": "에이엔피",
+      "bucket": "MULTI_FACTOR",
+      "familyCount": 3,
       "signals": [
-        "TOP_GAINER",
-        "VOLUME_SURGE"
+        "FOREIGNER_BUY",
+        "HIGH_VOLUME",
+        "TOP_GAINER"
       ],
-      "warnings": [
-        "VOLUME_SURGE_AND_GAIN"
-      ],
-      "investorState": "NONE",
-      "bestRanking": 1
+      "warnings": [],
+      "investorState": "FOREIGN_ONLY_BUY",
+      "bestRanking": 7
     },
     {
-      "code": "250930",
-      "name": "예선테크",
+      "code": "030960",
+      "name": "양지사",
       "bucket": "TWO_FACTOR",
       "familyCount": 2,
       "signals": [
@@ -122,6 +108,36 @@
       ],
       "warnings": [],
       "investorState": "BOTH_SELL",
+      "bestRanking": 2
+    },
+    {
+      "code": "065650",
+      "name": "하이퍼코퍼레이션",
+      "bucket": "TWO_FACTOR",
+      "familyCount": 2,
+      "signals": [
+        "TOP_GAINER",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [
+        "VOLUME_SURGE_AND_GAIN"
+      ],
+      "investorState": "NONE",
+      "bestRanking": 2
+    },
+    {
+      "code": "250930",
+      "name": "예선테크",
+      "bucket": "TWO_FACTOR",
+      "familyCount": 2,
+      "signals": [
+        "TOP_GAINER",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [
+        "VOLUME_SURGE_AND_GAIN"
+      ],
+      "investorState": "NONE",
       "bestRanking": 2
     },
     {
@@ -164,21 +180,6 @@
       "bestRanking": 4
     },
     {
-      "code": "014990",
-      "name": "인디에프",
-      "bucket": "TWO_FACTOR",
-      "familyCount": 2,
-      "signals": [
-        "TOP_GAINER",
-        "VOLUME_SURGE"
-      ],
-      "warnings": [
-        "VOLUME_SURGE_AND_GAIN"
-      ],
-      "investorState": "NONE",
-      "bestRanking": 5
-    },
-    {
       "code": "402340",
       "name": "SK스퀘어",
       "bucket": "TWO_FACTOR",
@@ -189,7 +190,22 @@
       ],
       "warnings": [],
       "investorState": "ORGANIZATION_ONLY_BUY",
-      "bestRanking": 6
+      "bestRanking": 5
+    },
+    {
+      "code": "150900",
+      "name": "파수AI",
+      "bucket": "TWO_FACTOR",
+      "familyCount": 2,
+      "signals": [
+        "TOP_GAINER",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [
+        "VOLUME_SURGE_AND_GAIN"
+      ],
+      "investorState": "NONE",
+      "bestRanking": 7
     },
     {
       "code": "012340",
@@ -202,7 +218,7 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 7
+      "bestRanking": 8
     },
     {
       "code": "308100",
@@ -215,22 +231,20 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 7
+      "bestRanking": 8
     },
     {
-      "code": "177350",
-      "name": "베셀",
+      "code": "225530",
+      "name": "HC보광산업",
       "bucket": "TWO_FACTOR",
       "familyCount": 2,
       "signals": [
-        "TOP_GAINER",
-        "VOLUME_SURGE"
+        "HIGH_VOLUME",
+        "TOP_GAINER"
       ],
-      "warnings": [
-        "VOLUME_SURGE_AND_GAIN"
-      ],
+      "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 8
+      "bestRanking": 10
     },
     {
       "code": "006400",
@@ -246,19 +260,6 @@
       "bestRanking": 11
     },
     {
-      "code": "005380",
-      "name": "현대차",
-      "bucket": "TWO_FACTOR",
-      "familyCount": 2,
-      "signals": [
-        "HIGH_TRADING_VALUE",
-        "ORGANIZATION_BUY"
-      ],
-      "warnings": [],
-      "investorState": "ORGANIZATION_ONLY_BUY",
-      "bestRanking": 13
-    },
-    {
       "code": "069540",
       "name": "빛과전자",
       "bucket": "TWO_FACTOR",
@@ -269,6 +270,19 @@
       ],
       "warnings": [],
       "investorState": "FOREIGN_ONLY_BUY",
+      "bestRanking": 11
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "bucket": "TWO_FACTOR",
+      "familyCount": 2,
+      "signals": [
+        "HIGH_TRADING_VALUE",
+        "ORGANIZATION_BUY"
+      ],
+      "warnings": [],
+      "investorState": "ORGANIZATION_ONLY_BUY",
       "bestRanking": 14
     },
     {
@@ -302,6 +316,18 @@
       "bestRanking": 1
     },
     {
+      "code": "001000",
+      "name": "신라섬유",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "TOP_GAINER"
+      ],
+      "warnings": [],
+      "investorState": "NONE",
+      "bestRanking": 1
+    },
+    {
       "code": "041960",
       "name": "코미팜",
       "bucket": "SINGLE_FACTOR",
@@ -332,7 +358,6 @@
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
-        "FOREIGNER_SELL",
         "HIGH_VOLUME",
         "VOLUME_SURGE"
       ],
@@ -365,18 +390,6 @@
       "bestRanking": 3
     },
     {
-      "code": "002200",
-      "name": "한국수출포장",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 4
-    },
-    {
       "code": "005935",
       "name": "삼성전자우",
       "bucket": "SINGLE_FACTOR",
@@ -387,11 +400,40 @@
       ],
       "warnings": [],
       "investorState": "NONE",
+      "bestRanking": 4
+    },
+    {
+      "code": "028670",
+      "name": "팬오션",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "BUY_SELL_CONFLICT",
+        "FOREIGNER_SELL",
+        "HIGH_52WEEK",
+        "ORGANIZATION_BUY"
+      ],
+      "warnings": [
+        "BUY_SELL_CONFLICT"
+      ],
+      "investorState": "BUY_SELL_CONFLICT",
+      "bestRanking": 4
+    },
+    {
+      "code": "002200",
+      "name": "한국수출포장",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "investorState": "NONE",
       "bestRanking": 5
     },
     {
-      "code": "004780",
-      "name": "대륙제관",
+      "code": "014990",
+      "name": "인디에프",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -414,8 +456,8 @@
       "bestRanking": 7
     },
     {
-      "code": "419540",
-      "name": "비스토스",
+      "code": "004780",
+      "name": "대륙제관",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -423,43 +465,19 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 7
+      "bestRanking": 8
     },
     {
-      "code": "278470",
-      "name": "에이피알",
+      "code": "177350",
+      "name": "베셀",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
-        "HIGH_TRADING_VALUE"
+        "VOLUME_SURGE"
       ],
       "warnings": [],
       "investorState": "NONE",
       "bestRanking": 9
-    },
-    {
-      "code": "001000",
-      "name": "신라섬유",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "TOP_GAINER"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 10
-    },
-    {
-      "code": "109740",
-      "name": "디에스케이",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 10
     },
     {
       "code": "198440",
@@ -474,21 +492,20 @@
       "bestRanking": 10
     },
     {
-      "code": "003280",
-      "name": "흥아해운",
+      "code": "278470",
+      "name": "에이피알",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
-        "FOREIGNER_SELL",
-        "HIGH_VOLUME"
+        "HIGH_TRADING_VALUE"
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 11
+      "bestRanking": 10
     },
     {
-      "code": "0165X0",
-      "name": "메리츠제2호스팩",
+      "code": "419540",
+      "name": "비스토스",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -496,23 +513,11 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 11
+      "bestRanking": 10
     },
     {
-      "code": "225530",
-      "name": "HC보광산업",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "TOP_GAINER"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 11
-    },
-    {
-      "code": "026040",
-      "name": "제이에스티나",
+      "code": "030610",
+      "name": "교보증권",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -535,44 +540,8 @@
       "bestRanking": 12
     },
     {
-      "code": "002630",
-      "name": "오리엔트바이오",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 13
-    },
-    {
-      "code": "005160",
-      "name": "동국산업",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "HIGH_VOLUME"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 13
-    },
-    {
-      "code": "065770",
-      "name": "CS",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "TOP_GAINER"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 13
-    },
-    {
-      "code": "034020",
-      "name": "두산에너빌리티",
+      "code": "042700",
+      "name": "한미반도체",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -580,7 +549,7 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 14
+      "bestRanking": 13
     },
     {
       "code": "054930",
@@ -592,23 +561,24 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 14
+      "bestRanking": 13
     },
     {
-      "code": "240600",
-      "name": "유진테크놀로지",
+      "code": "003280",
+      "name": "흥아해운",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
-        "TOP_GAINER"
+        "FOREIGNER_SELL",
+        "HIGH_VOLUME"
       ],
       "warnings": [],
       "investorState": "NONE",
       "bestRanking": 14
     },
     {
-      "code": "475460",
-      "name": "미트박스",
+      "code": "109740",
+      "name": "디에스케이",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -616,11 +586,11 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 15
+      "bestRanking": 14
     },
     {
-      "code": "060560",
-      "name": "HC홈센타",
+      "code": "009730",
+      "name": "이렘",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -628,7 +598,7 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 16
+      "bestRanking": 15
     },
     {
       "code": "066570",
@@ -641,11 +611,35 @@
       ],
       "warnings": [],
       "investorState": "NONE",
+      "bestRanking": 15
+    },
+    {
+      "code": "095720",
+      "name": "웅진씽크빅",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "investorState": "NONE",
+      "bestRanking": 15
+    },
+    {
+      "code": "005160",
+      "name": "동국산업",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "HIGH_VOLUME"
+      ],
+      "warnings": [],
+      "investorState": "NONE",
       "bestRanking": 16
     },
     {
-      "code": "255440",
-      "name": "야스",
+      "code": "026040",
+      "name": "제이에스티나",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -656,8 +650,20 @@
       "bestRanking": 16
     },
     {
-      "code": "009190",
-      "name": "대양금속",
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "HIGH_TRADING_VALUE"
+      ],
+      "warnings": [],
+      "investorState": "NONE",
+      "bestRanking": 16
+    },
+    {
+      "code": "053800",
+      "name": "안랩",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -668,8 +674,8 @@
       "bestRanking": 17
     },
     {
-      "code": "010170",
-      "name": "대한광통신",
+      "code": "058730",
+      "name": "다스코",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -680,8 +686,8 @@
       "bestRanking": 17
     },
     {
-      "code": "114840",
-      "name": "아이패밀리에스씨",
+      "code": "403490",
+      "name": "우듬지팜",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -692,17 +698,42 @@
       "bestRanking": 17
     },
     {
-      "code": "290650",
-      "name": "엘앤씨바이오",
+      "code": "0165X0",
+      "name": "메리츠제2호스팩",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "investorState": "NONE",
+      "bestRanking": 18
+    },
+    {
+      "code": "419050",
+      "name": "삼기에너지솔루션즈",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
         "FOREIGNER_SELL",
-        "HIGH_TRADING_VALUE"
+        "HIGH_VOLUME"
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 17
+      "bestRanking": 18
+    },
+    {
+      "code": "011070",
+      "name": "LG이노텍",
+      "bucket": "SINGLE_FACTOR",
+      "familyCount": 1,
+      "signals": [
+        "HIGH_TRADING_VALUE",
+        "ORGANIZATION_SELL"
+      ],
+      "warnings": [],
+      "investorState": "NONE",
+      "bestRanking": 19
     },
     {
       "code": "0220W0",
@@ -715,47 +746,23 @@
       ],
       "warnings": [],
       "investorState": "NONE",
-      "bestRanking": 18
+      "bestRanking": 19
     },
     {
-      "code": "451250",
-      "name": "삐아",
+      "code": "043590",
+      "name": "웰킵스하이텍",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 18
-    },
-    {
-      "code": "042700",
-      "name": "한미반도체",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "HIGH_TRADING_VALUE"
+        "TOP_GAINER"
       ],
       "warnings": [],
       "investorState": "NONE",
       "bestRanking": 19
     },
     {
-      "code": "266690",
-      "name": "덕산넵코어스",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "HIGH_VOLUME"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 19
-    },
-    {
-      "code": "403490",
-      "name": "우듬지팜",
+      "code": "475460",
+      "name": "미트박스",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -766,8 +773,8 @@
       "bestRanking": 19
     },
     {
-      "code": "032960",
-      "name": "동일기연",
+      "code": "009190",
+      "name": "대양금속",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -778,8 +785,8 @@
       "bestRanking": 20
     },
     {
-      "code": "053060",
-      "name": "세동",
+      "code": "114840",
+      "name": "아이패밀리에스씨",
       "bucket": "SINGLE_FACTOR",
       "familyCount": 1,
       "signals": [
@@ -797,19 +804,6 @@
       "signals": [
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_SELL"
-      ],
-      "warnings": [],
-      "investorState": "NONE",
-      "bestRanking": 20
-    },
-    {
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "bucket": "SINGLE_FACTOR",
-      "familyCount": 1,
-      "signals": [
-        "FOREIGNER_SELL",
-        "HIGH_VOLUME"
       ],
       "warnings": [],
       "investorState": "NONE",
