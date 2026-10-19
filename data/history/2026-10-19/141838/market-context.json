@@ -1,0 +1,594 @@
+{
+  "generatedAt": "2026-10-19T14:31:52.677473+09:00",
+  "sourceGeneratedAt": "2026-10-19T14:18:38.253082+09:00",
+  "status": "OK",
+  "freshness": {
+    "status": "OK",
+    "sourceGeneratedAt": "2026-10-19T14:18:38.253082+09:00",
+    "ageMinutes": 13.24,
+    "warnings": []
+  },
+  "rankingCandidateCounts": {
+    "trading_value": 20,
+    "volume": 20,
+    "volume_surge": 20,
+    "high_52week": 8,
+    "gainers": 20
+  },
+  "rankingOverlapCount": 14,
+  "FOREIGNERBuyCount": 20,
+  "ORGANIZATIONBuyCount": 20,
+  "BOTH_BUYCount": 0,
+  "BUY_SELL_CONFLICTCount": 3,
+  "industriesTotal": 79,
+  "broadStrengthIndustryCount": 17,
+  "weakIndustryCount": 6,
+  "candidateCount": 68,
+  "enrichmentEligibleCount": 21,
+  "bucketCounts": {
+    "MULTI_FACTOR": 3,
+    "TWO_FACTOR": 18,
+    "SINGLE_FACTOR": 47
+  },
+  "cautionCounts": {
+    "BOTH_SELL": 1,
+    "BUY_SELL_CONFLICT": 1,
+    "RAPID_MOVE": 0
+  },
+  "warnings": [],
+  "industries": [
+    {
+      "id": "283",
+      "name": "전기제품",
+      "advanceRatio": 0.7647058823529411,
+      "declineRatio": 0.19117647058823528,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "272",
+      "name": "화학",
+      "advanceRatio": 0.6885245901639344,
+      "declineRatio": 0.2540983606557377,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "264",
+      "name": "백화점과일반상점",
+      "advanceRatio": 0.9285714285714286,
+      "declineRatio": 0.07142857142857142,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "273",
+      "name": "자동차",
+      "advanceRatio": 0.9166666666666666,
+      "declineRatio": 0.0,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "261",
+      "name": "제약",
+      "advanceRatio": 0.5459770114942529,
+      "declineRatio": 0.3333333333333333,
+      "state": "MIXED"
+    },
+    {
+      "id": "322",
+      "name": "비철금속",
+      "advanceRatio": 0.625,
+      "declineRatio": 0.3,
+      "state": "MIXED"
+    },
+    {
+      "id": "304",
+      "name": "철강",
+      "advanceRatio": 0.5454545454545454,
+      "declineRatio": 0.38181818181818183,
+      "state": "MIXED"
+    },
+    {
+      "id": "285",
+      "name": "방송과엔터테인먼트",
+      "advanceRatio": 0.49122807017543857,
+      "declineRatio": 0.38596491228070173,
+      "state": "MIXED"
+    },
+    {
+      "id": "267",
+      "name": "IT서비스",
+      "advanceRatio": 0.6218487394957983,
+      "declineRatio": 0.3445378151260504,
+      "state": "MIXED"
+    },
+    {
+      "id": "295",
+      "name": "에너지장비및서비스",
+      "advanceRatio": 0.6176470588235294,
+      "declineRatio": 0.2647058823529412,
+      "state": "MIXED"
+    },
+    {
+      "id": "305",
+      "name": "항공사",
+      "advanceRatio": 0.6666666666666666,
+      "declineRatio": 0.2222222222222222,
+      "state": "MIXED"
+    },
+    {
+      "id": "315",
+      "name": "손해보험",
+      "advanceRatio": 0.8333333333333334,
+      "declineRatio": 0.16666666666666666,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "288",
+      "name": "건강관리기술",
+      "advanceRatio": 0.5384615384615384,
+      "declineRatio": 0.38461538461538464,
+      "state": "MIXED"
+    },
+    {
+      "id": "270",
+      "name": "자동차부품",
+      "advanceRatio": 0.6339869281045751,
+      "declineRatio": 0.29411764705882354,
+      "state": "MIXED"
+    },
+    {
+      "id": "262",
+      "name": "생명과학도구및서비스",
+      "advanceRatio": 0.6097560975609756,
+      "declineRatio": 0.21951219512195122,
+      "state": "MIXED"
+    },
+    {
+      "id": "330",
+      "name": "생명보험",
+      "advanceRatio": 1.0,
+      "declineRatio": 0.0,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "329",
+      "name": "도로와철도운송",
+      "advanceRatio": 0.75,
+      "declineRatio": 0.25,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "265",
+      "name": "판매업체",
+      "advanceRatio": 0.46153846153846156,
+      "declineRatio": 0.38461538461538464,
+      "state": "MIXED"
+    },
+    {
+      "id": "263",
+      "name": "게임엔터테인먼트",
+      "advanceRatio": 0.5294117647058824,
+      "declineRatio": 0.35294117647058826,
+      "state": "MIXED"
+    },
+    {
+      "id": "312",
+      "name": "가스유틸리티",
+      "advanceRatio": 0.6666666666666666,
+      "declineRatio": 0.3333333333333333,
+      "state": "MIXED"
+    },
+    {
+      "id": "325",
+      "name": "전기유틸리티",
+      "advanceRatio": 1.0,
+      "declineRatio": 0.0,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "331",
+      "name": "복합유틸리티",
+      "advanceRatio": 1.0,
+      "declineRatio": 0.0,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "314",
+      "name": "출판",
+      "advanceRatio": 0.5714285714285714,
+      "declineRatio": 0.42857142857142855,
+      "state": "MIXED"
+    },
+    {
+      "id": "286",
+      "name": "생물공학",
+      "advanceRatio": 0.5423728813559322,
+      "declineRatio": 0.3050847457627119,
+      "state": "MIXED"
+    },
+    {
+      "id": "299",
+      "name": "기계",
+      "advanceRatio": 0.7714285714285715,
+      "declineRatio": 0.1523809523809524,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "275",
+      "name": "담배",
+      "advanceRatio": 1.0,
+      "declineRatio": 0.0,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "284",
+      "name": "우주항공과국방",
+      "advanceRatio": 0.8571428571428571,
+      "declineRatio": 0.14285714285714285,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "323",
+      "name": "해운사",
+      "advanceRatio": 0.36363636363636365,
+      "declineRatio": 0.5454545454545454,
+      "state": "MIXED"
+    },
+    {
+      "id": "336",
+      "name": "다각화된통신서비스",
+      "advanceRatio": 0.6666666666666666,
+      "declineRatio": 0.3333333333333333,
+      "state": "MIXED"
+    },
+    {
+      "id": "313",
+      "name": "석유와가스",
+      "advanceRatio": 0.47368421052631576,
+      "declineRatio": 0.3684210526315789,
+      "state": "MIXED"
+    },
+    {
+      "id": "326",
+      "name": "항공화물운송과물류",
+      "advanceRatio": 0.38461538461538464,
+      "declineRatio": 0.6153846153846154,
+      "state": "MIXED"
+    },
+    {
+      "id": "334",
+      "name": "무역회사와판매업체",
+      "advanceRatio": 0.625,
+      "declineRatio": 0.25,
+      "state": "MIXED"
+    },
+    {
+      "id": "294",
+      "name": "통신장비",
+      "advanceRatio": 0.5454545454545454,
+      "declineRatio": 0.2909090909090909,
+      "state": "MIXED"
+    },
+    {
+      "id": "310",
+      "name": "광고",
+      "advanceRatio": 0.3157894736842105,
+      "declineRatio": 0.5263157894736842,
+      "state": "WEAK"
+    },
+    {
+      "id": "328",
+      "name": "전문소매",
+      "advanceRatio": 0.8,
+      "declineRatio": 0.2,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "321",
+      "name": "증권",
+      "advanceRatio": 0.5897435897435898,
+      "declineRatio": 0.358974358974359,
+      "state": "MIXED"
+    },
+    {
+      "id": "311",
+      "name": "포장재",
+      "advanceRatio": 0.5555555555555556,
+      "declineRatio": 0.37037037037037035,
+      "state": "MIXED"
+    },
+    {
+      "id": "309",
+      "name": "음료",
+      "advanceRatio": 0.625,
+      "declineRatio": 0.25,
+      "state": "MIXED"
+    },
+    {
+      "id": "324",
+      "name": "상업서비스와공급품",
+      "advanceRatio": 0.5806451612903226,
+      "declineRatio": 0.22580645161290322,
+      "state": "MIXED"
+    },
+    {
+      "id": "317",
+      "name": "호텔,레스토랑,레저",
+      "advanceRatio": 0.7368421052631579,
+      "declineRatio": 0.21052631578947367,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "301",
+      "name": "은행",
+      "advanceRatio": 0.7272727272727273,
+      "declineRatio": 0.2727272727272727,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "316",
+      "name": "건강관리업체및서비스",
+      "advanceRatio": 0.5666666666666667,
+      "declineRatio": 0.36666666666666664,
+      "state": "MIXED"
+    },
+    {
+      "id": "268",
+      "name": "식품",
+      "advanceRatio": 0.5108695652173914,
+      "declineRatio": 0.3804347826086957,
+      "state": "MIXED"
+    },
+    {
+      "id": "289",
+      "name": "건축자재",
+      "advanceRatio": 0.5490196078431373,
+      "declineRatio": 0.37254901960784315,
+      "state": "MIXED"
+    },
+    {
+      "id": "277",
+      "name": "창업투자",
+      "advanceRatio": 0.42528735632183906,
+      "declineRatio": 0.367816091954023,
+      "state": "MIXED"
+    },
+    {
+      "id": "333",
+      "name": "무선통신서비스",
+      "advanceRatio": 0.5,
+      "declineRatio": 0.25,
+      "state": "MIXED"
+    },
+    {
+      "id": "300",
+      "name": "양방향미디어와서비스",
+      "advanceRatio": 0.6875,
+      "declineRatio": 0.3125,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "302",
+      "name": "식품과기본식료품소매",
+      "advanceRatio": 0.5714285714285714,
+      "declineRatio": 0.42857142857142855,
+      "state": "MIXED"
+    },
+    {
+      "id": "281",
+      "name": "건강관리장비와용품",
+      "advanceRatio": 0.46153846153846156,
+      "declineRatio": 0.3173076923076923,
+      "state": "MIXED"
+    },
+    {
+      "id": "320",
+      "name": "건축제품",
+      "advanceRatio": 0.45454545454545453,
+      "declineRatio": 0.5454545454545454,
+      "state": "MIXED"
+    },
+    {
+      "id": "290",
+      "name": "교육서비스",
+      "advanceRatio": 0.375,
+      "declineRatio": 0.4583333333333333,
+      "state": "MIXED"
+    },
+    {
+      "id": "298",
+      "name": "가정용기기와용품",
+      "advanceRatio": 0.55,
+      "declineRatio": 0.45,
+      "state": "MIXED"
+    },
+    {
+      "id": "292",
+      "name": "핸드셋",
+      "advanceRatio": 0.6491228070175439,
+      "declineRatio": 0.3157894736842105,
+      "state": "MIXED"
+    },
+    {
+      "id": "337",
+      "name": "카드",
+      "advanceRatio": 1.0,
+      "declineRatio": 0.0,
+      "state": "BROAD_STRENGTH"
+    },
+    {
+      "id": "296",
+      "name": "운송인프라",
+      "advanceRatio": 0.5,
+      "declineRatio": 0.5,
+      "state": "MIXED"
+    },
+    {
+      "id": "303",
+      "name": "가구",
+      "advanceRatio": 0.45454545454545453,
+      "declineRatio": 0.36363636363636365,
+      "state": "MIXED"
+    },
+    {
+      "id": "274",
+      "name": "섬유,의류,신발,호화품",
+      "advanceRatio": 0.4567901234567901,
+      "declineRatio": 0.4567901234567901,
+      "state": "MIXED"
+    },
+    {
+      "id": "318",
+      "name": "종이와목재",
+      "advanceRatio": 0.5,
+      "declineRatio": 0.35714285714285715,
+      "state": "MIXED"
+    },
+    {
+      "id": "269",
+      "name": "디스플레이장비및부품",
+      "advanceRatio": 0.49295774647887325,
+      "declineRatio": 0.4084507042253521,
+      "state": "MIXED"
+    },
+    {
+      "id": "280",
+      "name": "부동산",
+      "advanceRatio": 0.36666666666666664,
+      "declineRatio": 0.5333333333333333,
+      "state": "MIXED"
+    },
+    {
+      "id": "279",
+      "name": "건설",
+      "advanceRatio": 0.5384615384615384,
+      "declineRatio": 0.28205128205128205,
+      "state": "MIXED"
+    },
+    {
+      "id": "339",
+      "name": "다각화된소비자서비스",
+      "advanceRatio": 0.0,
+      "declineRatio": 1.0,
+      "state": "WEAK"
+    },
+    {
+      "id": "271",
+      "name": "레저용장비와제품",
+      "advanceRatio": 0.46153846153846156,
+      "declineRatio": 0.3076923076923077,
+      "state": "MIXED"
+    },
+    {
+      "id": "306",
+      "name": "전기장비",
+      "advanceRatio": 0.42857142857142855,
+      "declineRatio": 0.42857142857142855,
+      "state": "MIXED"
+    },
+    {
+      "id": "25",
+      "name": "기타",
+      "advanceRatio": 0.4411384217335058,
+      "declineRatio": 0.47865459249676584,
+      "state": "MIXED"
+    },
+    {
+      "id": "307",
+      "name": "전자제품",
+      "advanceRatio": 0.4,
+      "declineRatio": 0.4666666666666667,
+      "state": "MIXED"
+    },
+    {
+      "id": "276",
+      "name": "복합기업",
+      "advanceRatio": 0.5,
+      "declineRatio": 0.5,
+      "state": "MIXED"
+    },
+    {
+      "id": "287",
+      "name": "소프트웨어",
+      "advanceRatio": 0.47297297297297297,
+      "declineRatio": 0.3783783783783784,
+      "state": "MIXED"
+    },
+    {
+      "id": "338",
+      "name": "사무용전자제품",
+      "advanceRatio": 0.0,
+      "declineRatio": 1.0,
+      "state": "WEAK"
+    },
+    {
+      "id": "266",
+      "name": "화장품",
+      "advanceRatio": 0.46875,
+      "declineRatio": 0.453125,
+      "state": "MIXED"
+    },
+    {
+      "id": "327",
+      "name": "디스플레이패널",
+      "advanceRatio": 0.5,
+      "declineRatio": 0.16666666666666666,
+      "state": "MIXED"
+    },
+    {
+      "id": "293",
+      "name": "컴퓨터와주변기기",
+      "advanceRatio": 0.5238095238095238,
+      "declineRatio": 0.38095238095238093,
+      "state": "MIXED"
+    },
+    {
+      "id": "278",
+      "name": "반도체와반도체장비",
+      "advanceRatio": 0.3063583815028902,
+      "declineRatio": 0.6589595375722543,
+      "state": "WEAK"
+    },
+    {
+      "id": "319",
+      "name": "기타금융",
+      "advanceRatio": 0.5,
+      "declineRatio": 0.3333333333333333,
+      "state": "MIXED"
+    },
+    {
+      "id": "332",
+      "name": "문구류",
+      "advanceRatio": 0.0,
+      "declineRatio": 1.0,
+      "state": "WEAK"
+    },
+    {
+      "id": "291",
+      "name": "조선",
+      "advanceRatio": 0.5,
+      "declineRatio": 0.43333333333333335,
+      "state": "MIXED"
+    },
+    {
+      "id": "297",
+      "name": "가정용품",
+      "advanceRatio": 0.25,
+      "declineRatio": 0.5833333333333334,
+      "state": "WEAK"
+    },
+    {
+      "id": "282",
+      "name": "전자장비와기기",
+      "advanceRatio": 0.638095238095238,
+      "declineRatio": 0.2857142857142857,
+      "state": "MIXED"
+    },
+    {
+      "id": "308",
+      "name": "인터넷과카탈로그소매",
+      "advanceRatio": 0.3333333333333333,
+      "declineRatio": 0.6666666666666666,
+      "state": "MIXED"
+    }
+  ]
+}
