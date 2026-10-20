@@ -1,22 +1,20 @@
 {
-  "generatedAt": "2026-10-20T13:06:10.913124+09:00",
-  "sourceGeneratedAt": "2026-10-20T12:59:42.013048+09:00",
-  "status": "PARTIAL",
-  "candidateCount": 63,
-  "enrichmentEligibleCount": 24,
+  "generatedAt": "2026-10-20T13:34:17.453719+09:00",
+  "sourceGeneratedAt": "2026-10-20T13:34:09.195128+09:00",
+  "status": "OK",
+  "candidateCount": 62,
+  "enrichmentEligibleCount": 25,
   "bucketCounts": {
     "MULTI_FACTOR": 2,
-    "TWO_FACTOR": 22,
-    "SINGLE_FACTOR": 39
+    "TWO_FACTOR": 23,
+    "SINGLE_FACTOR": 37
   },
   "cautionCounts": {
     "BOTH_SELL": 1,
     "BUY_SELL_CONFLICT": 1,
     "RAPID_MOVE": 0
   },
-  "warnings": [
-    "PARTIAL_SOURCE_DATA"
-  ],
+  "warnings": [],
   "candidates": [
     {
       "code": "396300",
@@ -27,45 +25,43 @@
         "HIGH_VOLUME",
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
-            "derivedRank": 7,
-            "price": 10380,
-            "changeRate": 13.82,
-            "volume": 19495240,
-            "tradingValue": 208206772000,
+            "derivedRank": 8,
+            "price": 10510,
+            "changeRate": 15.24,
+            "volume": 20148953,
+            "tradingValue": 215054206000,
             "sourceItemcode": "396300"
           },
           {
             "source": "volume",
             "derivedRank": 3,
-            "price": 10380,
-            "changeRate": 13.82,
-            "volume": 19495240,
-            "tradingValue": 208206772000,
+            "price": 10510,
+            "changeRate": 15.24,
+            "volume": 20148953,
+            "tradingValue": 215054206000,
             "sourceItemcode": "396300"
           },
           {
             "source": "high_52week",
             "derivedRank": 1,
-            "price": 10380,
-            "changeRate": 13.82,
-            "volume": 19495240,
-            "tradingValue": 208206772000,
+            "price": 10510,
+            "changeRate": 15.24,
+            "volume": 20148953,
+            "tradingValue": 215054206000,
             "sourceItemcode": "396300"
           },
           {
             "source": "gainers",
-            "derivedRank": 17,
-            "price": 10380,
-            "changeRate": 13.82,
-            "volume": 19495240,
-            "tradingValue": 208206772000,
+            "derivedRank": 15,
+            "price": 10510,
+            "changeRate": 15.24,
+            "volume": 20148953,
+            "tradingValue": 215054206000,
             "sourceItemcode": "396300"
           }
         ],
@@ -106,7 +102,6 @@
         "VOLUME_SURGE"
       ],
       "warnings": [
-        "PARTIAL_SOURCE_DATA",
         "VOLUME_SURGE_AND_GAIN"
       ],
       "evidence": {
@@ -114,37 +109,37 @@
           {
             "source": "trading_value",
             "derivedRank": 19,
-            "price": 18760,
-            "changeRate": 24.57,
-            "volume": 4811561,
-            "tradingValue": 85584686000,
+            "price": 18220,
+            "changeRate": 20.98,
+            "volume": 5274374,
+            "tradingValue": 94100514000,
             "sourceItemcode": "0035S0"
           },
           {
             "source": "volume",
-            "derivedRank": 20,
-            "price": 18760,
-            "changeRate": 24.57,
-            "volume": 4811561,
-            "tradingValue": 85584686000,
+            "derivedRank": 17,
+            "price": 18220,
+            "changeRate": 20.98,
+            "volume": 5274374,
+            "tradingValue": 94100514000,
             "sourceItemcode": "0035S0"
           },
           {
             "source": "volume_surge",
-            "derivedRank": 6,
-            "price": 18760,
-            "changeRate": 24.57,
-            "volume": 4811561,
-            "tradingValue": 85584686000,
+            "derivedRank": 10,
+            "price": 18220,
+            "changeRate": 20.98,
+            "volume": 5274374,
+            "tradingValue": 94100514000,
             "sourceItemcode": "0035S0"
           },
           {
             "source": "gainers",
-            "derivedRank": 7,
-            "price": 18760,
-            "changeRate": 24.57,
-            "volume": 4811561,
-            "tradingValue": 85584686000,
+            "derivedRank": 9,
+            "price": 18220,
+            "changeRate": 20.98,
+            "volume": 5274374,
+            "tradingValue": 94100514000,
             "sourceItemcode": "0035S0"
           }
         ],
@@ -168,13 +163,13 @@
       "cautionSignals": [
         "UNUSUAL_CODE_FORMAT"
       ],
-      "bestRanking": 6,
+      "bestRanking": 9,
       "industry": {
         "status": "READY",
         "id": "267",
         "name": "IT서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -185,7 +180,6 @@
         "VOLUME_SURGE"
       ],
       "warnings": [
-        "PARTIAL_SOURCE_DATA",
         "VOLUME_SURGE_AND_GAIN"
       ],
       "evidence": {
@@ -193,19 +187,19 @@
           {
             "source": "volume_surge",
             "derivedRank": 1,
-            "price": 3110,
-            "changeRate": 21.96,
-            "volume": 3797496,
-            "tradingValue": 11982799000,
+            "price": 3100,
+            "changeRate": 21.57,
+            "volume": 3930998,
+            "tradingValue": 12397001000,
             "sourceItemcode": "241690"
           },
           {
             "source": "gainers",
-            "derivedRank": 9,
-            "price": 3110,
-            "changeRate": 21.96,
-            "volume": 3797496,
-            "tradingValue": 11982799000,
+            "derivedRank": 8,
+            "price": 3100,
+            "changeRate": 21.57,
+            "volume": 3930998,
+            "tradingValue": 12397001000,
             "sourceItemcode": "241690"
           }
         ],
@@ -230,8 +224,8 @@
         "status": "READY",
         "id": "270",
         "name": "자동차부품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -245,27 +239,26 @@
         "ORGANIZATION_SELL"
       ],
       "warnings": [
-        "BUY_SELL_CONFLICT",
-        "PARTIAL_SOURCE_DATA"
+        "BUY_SELL_CONFLICT"
       ],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 2,
-            "price": 211000,
-            "changeRate": -3.21,
-            "volume": 7947463,
-            "tradingValue": 1703908000000,
+            "price": 209500,
+            "changeRate": -3.9,
+            "volume": 9338429,
+            "tradingValue": 1996462000000,
             "sourceItemcode": "005930"
           },
           {
             "source": "volume",
-            "derivedRank": 10,
-            "price": 211000,
-            "changeRate": -3.21,
-            "volume": 7947463,
-            "tradingValue": 1703908000000,
+            "derivedRank": 11,
+            "price": 209500,
+            "changeRate": -3.9,
+            "volume": 9338429,
+            "tradingValue": 1996462000000,
             "sourceItemcode": "005930"
           }
         ],
@@ -274,7 +267,7 @@
             "investorType": "FOREIGNER",
             "side": "BUY",
             "derivedRank": 1,
-            "accTradeVolume": 369210,
+            "accTradeVolume": 831781,
             "accTradeAmount": 0
           },
           {
@@ -308,8 +301,8 @@
         "status": "READY",
         "id": "278",
         "name": "반도체와반도체장비",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -319,18 +312,16 @@
         "HIGH_VOLUME",
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
-            "derivedRank": 14,
+            "derivedRank": 15,
             "price": 1140,
             "changeRate": 29.99,
-            "volume": 5739381,
-            "tradingValue": 6297831000,
+            "volume": 5742210,
+            "tradingValue": 6301057000,
             "sourceItemcode": "011080"
           },
           {
@@ -338,8 +329,8 @@
             "derivedRank": 2,
             "price": 1140,
             "changeRate": 29.99,
-            "volume": 5739381,
-            "tradingValue": 6297831000,
+            "volume": 5742210,
+            "tradingValue": 6301057000,
             "sourceItemcode": "011080"
           }
         ],
@@ -364,8 +355,8 @@
         "status": "READY",
         "id": "274",
         "name": "섬유,의류,신발,호화품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -376,7 +367,6 @@
         "VOLUME_SURGE"
       ],
       "warnings": [
-        "PARTIAL_SOURCE_DATA",
         "VOLUME_SURGE_AND_GAIN"
       ],
       "evidence": {
@@ -384,19 +374,19 @@
           {
             "source": "volume_surge",
             "derivedRank": 2,
-            "price": 1063,
-            "changeRate": 23.6,
-            "volume": 4700905,
-            "tradingValue": 4874496000,
+            "price": 1021,
+            "changeRate": 18.72,
+            "volume": 4916061,
+            "tradingValue": 5097992000,
             "sourceItemcode": "206560"
           },
           {
             "source": "gainers",
-            "derivedRank": 8,
-            "price": 1063,
-            "changeRate": 23.6,
-            "volume": 4700905,
-            "tradingValue": 4874496000,
+            "derivedRank": 10,
+            "price": 1021,
+            "changeRate": 18.72,
+            "volume": 4916061,
+            "tradingValue": 5097992000,
             "sourceItemcode": "206560"
           }
         ],
@@ -421,8 +411,8 @@
         "status": "READY",
         "id": "285",
         "name": "방송과엔터테인먼트",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -432,27 +422,25 @@
         "HIGH_VOLUME",
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
             "derivedRank": 2,
-            "price": 1370,
-            "changeRate": 17.7,
-            "volume": 21214329,
-            "tradingValue": 28279266000,
+            "price": 1341,
+            "changeRate": 15.21,
+            "volume": 22461869,
+            "tradingValue": 29971030000,
             "sourceItemcode": "317240"
           },
           {
             "source": "gainers",
-            "derivedRank": 13,
-            "price": 1370,
-            "changeRate": 17.7,
-            "volume": 21214329,
-            "tradingValue": 28279266000,
+            "derivedRank": 16,
+            "price": 1341,
+            "changeRate": 15.21,
+            "volume": 22461869,
+            "tradingValue": 29971030000,
             "sourceItemcode": "317240"
           }
         ],
@@ -482,45 +470,32 @@
       }
     },
     {
-      "code": "048530",
-      "name": "인트론바이오",
+      "code": "005160",
+      "name": "동국산업",
       "signals": [
-        "HIGH_VOLUME",
-        "TOP_GAINER",
-        "VOLUME_SURGE"
+        "HIGH_52WEEK",
+        "HIGH_VOLUME"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA",
-        "VOLUME_SURGE_AND_GAIN"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
-            "derivedRank": 17,
-            "price": 3190,
-            "changeRate": 13.52,
-            "volume": 5091665,
-            "tradingValue": 16404586000,
-            "sourceItemcode": "048530"
+            "derivedRank": 19,
+            "price": 4700,
+            "changeRate": 0,
+            "volume": 5161596,
+            "tradingValue": 24654989000,
+            "sourceItemcode": "005160"
           },
           {
-            "source": "volume_surge",
-            "derivedRank": 3,
-            "price": 3190,
-            "changeRate": 13.52,
-            "volume": 5091665,
-            "tradingValue": 16404586000,
-            "sourceItemcode": "048530"
-          },
-          {
-            "source": "gainers",
-            "derivedRank": 18,
-            "price": 3190,
-            "changeRate": 13.52,
-            "volume": 5091665,
-            "tradingValue": 16404586000,
-            "sourceItemcode": "048530"
+            "source": "high_52week",
+            "derivedRank": 4,
+            "price": 4700,
+            "changeRate": 0,
+            "volume": 5161596,
+            "tradingValue": 24654989000,
+            "sourceItemcode": "005160"
           }
         ],
         "investors": []
@@ -539,68 +514,11 @@
         "VOLUME"
       ],
       "cautionSignals": [],
-      "bestRanking": 3,
+      "bestRanking": 4,
       "industry": {
         "status": "READY",
-        "id": "262",
-        "name": "생명과학도구및서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "458350",
-      "name": "에스팀",
-      "signals": [
-        "TOP_GAINER",
-        "VOLUME_SURGE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA",
-        "VOLUME_SURGE_AND_GAIN"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume_surge",
-            "derivedRank": 15,
-            "price": 3795,
-            "changeRate": 29.97,
-            "volume": 993727,
-            "tradingValue": 3583651000,
-            "sourceItemcode": "458350"
-          },
-          {
-            "source": "gainers",
-            "derivedRank": 3,
-            "price": 3795,
-            "changeRate": 29.97,
-            "volume": 993727,
-            "tradingValue": 3583651000,
-            "sourceItemcode": "458350"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "MOMENTUM",
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 2,
-      "familyCount": 2,
-      "bucket": "TWO_FACTOR",
-      "enrichmentEligible": true,
-      "enrichmentReason": [
-        "MOMENTUM",
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 3,
-      "industry": {
-        "status": "READY",
-        "id": "310",
-        "name": "광고",
+        "id": "304",
+        "name": "철강",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
@@ -612,18 +530,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_BUY"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 4,
-            "price": 166050,
-            "changeRate": -2.84,
-            "volume": 1851104,
-            "tradingValue": 311796000000,
+            "price": 165100,
+            "changeRate": -3.39,
+            "volume": 2028586,
+            "tradingValue": 341189000000,
             "sourceItemcode": "005935"
           }
         ],
@@ -656,8 +572,85 @@
         "status": "READY",
         "id": "278",
         "name": "반도체와반도체장비",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "065450",
+      "name": "빅텍",
+      "signals": [
+        "FOREIGNER_SELL",
+        "HIGH_VOLUME",
+        "TOP_GAINER",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [
+        "VOLUME_SURGE_AND_GAIN"
+      ],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 4,
+            "price": 3385,
+            "changeRate": 16.12,
+            "volume": 13077422,
+            "tradingValue": 42160979000,
+            "sourceItemcode": "065450"
+          },
+          {
+            "source": "volume_surge",
+            "derivedRank": 7,
+            "price": 3385,
+            "changeRate": 16.12,
+            "volume": 13077422,
+            "tradingValue": 42160979000,
+            "sourceItemcode": "065450"
+          },
+          {
+            "source": "gainers",
+            "derivedRank": 14,
+            "price": 3385,
+            "changeRate": 16.12,
+            "volume": 13077422,
+            "tradingValue": 42160979000,
+            "sourceItemcode": "065450"
+          }
+        ],
+        "investors": [
+          {
+            "investorType": "FOREIGNER",
+            "side": "SELL",
+            "derivedRank": 13,
+            "accTradeVolume": -175305,
+            "accTradeAmount": 0
+          }
+        ]
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "MOMENTUM",
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 2,
+      "familyCount": 2,
+      "bucket": "TWO_FACTOR",
+      "enrichmentEligible": true,
+      "enrichmentReason": [
+        "MOMENTUM",
+        "VOLUME"
+      ],
+      "cautionSignals": [
+        "FOREIGN_SELL"
+      ],
+      "bestRanking": 4,
+      "industry": {
+        "status": "READY",
+        "id": "284",
+        "name": "우주항공과국방",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -668,7 +661,6 @@
         "VOLUME_SURGE"
       ],
       "warnings": [
-        "PARTIAL_SOURCE_DATA",
         "VOLUME_SURGE_AND_GAIN"
       ],
       "evidence": {
@@ -676,19 +668,19 @@
           {
             "source": "volume_surge",
             "derivedRank": 4,
-            "price": 13650,
-            "changeRate": 16.57,
-            "volume": 449047,
-            "tradingValue": 6182711000,
+            "price": 13030,
+            "changeRate": 11.27,
+            "volume": 491006,
+            "tradingValue": 6744885000,
             "sourceItemcode": "270660"
           },
           {
             "source": "gainers",
-            "derivedRank": 15,
-            "price": 13650,
-            "changeRate": 16.57,
-            "volume": 449047,
-            "tradingValue": 6182711000,
+            "derivedRank": 20,
+            "price": 13030,
+            "changeRate": 11.27,
+            "volume": 491006,
+            "tradingValue": 6744885000,
             "sourceItemcode": "270660"
           }
         ],
@@ -725,18 +717,17 @@
         "VOLUME_SURGE"
       ],
       "warnings": [
-        "PARTIAL_SOURCE_DATA",
         "VOLUME_SURGE_AND_GAIN"
       ],
       "evidence": {
         "rankings": [
           {
             "source": "volume_surge",
-            "derivedRank": 5,
+            "derivedRank": 8,
             "price": 1289,
             "changeRate": 29.94,
-            "volume": 947919,
-            "tradingValue": 1187000000,
+            "volume": 987012,
+            "tradingValue": 1237000000,
             "sourceItemcode": "000040"
           },
           {
@@ -744,8 +735,8 @@
             "derivedRank": 5,
             "price": 1289,
             "changeRate": 29.94,
-            "volume": 947919,
-            "tradingValue": 1187000000,
+            "volume": 987012,
+            "tradingValue": 1237000000,
             "sourceItemcode": "000040"
           }
         ],
@@ -770,8 +761,8 @@
         "status": "READY",
         "id": "273",
         "name": "자동차",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -781,27 +772,25 @@
         "HIGH_52WEEK",
         "HIGH_TRADING_VALUE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 5,
-            "price": 63900,
-            "changeRate": -29.39,
-            "volume": 4331934,
-            "tradingValue": 288747511000,
+            "price": 60400,
+            "changeRate": -33.26,
+            "volume": 4527738,
+            "tradingValue": 300906959000,
             "sourceItemcode": "0158S0"
           },
           {
             "source": "high_52week",
             "derivedRank": 9,
-            "price": 63900,
-            "changeRate": -29.39,
-            "volume": 4331934,
-            "tradingValue": 288747511000,
+            "price": 60400,
+            "changeRate": -33.26,
+            "volume": 4527738,
+            "tradingValue": 300906959000,
             "sourceItemcode": "0158S0"
           }
         ],
@@ -828,63 +817,8 @@
         "status": "READY",
         "id": "267",
         "name": "IT서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "signals": [
-        "FOREIGNER_BUY",
-        "HIGH_VOLUME"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume",
-            "derivedRank": 5,
-            "price": 2540,
-            "changeRate": -5.75,
-            "volume": 11180564,
-            "tradingValue": 29144657000,
-            "sourceItemcode": "419050"
-          }
-        ],
-        "investors": [
-          {
-            "investorType": "FOREIGNER",
-            "side": "BUY",
-            "derivedRank": 2,
-            "accTradeVolume": 256272,
-            "accTradeAmount": 0
-          }
-        ]
-      },
-      "investorState": "FOREIGN_ONLY_BUY",
-      "supportingFamilies": [
-        "INVESTOR_BUY",
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 2,
-      "familyCount": 2,
-      "bucket": "TWO_FACTOR",
-      "enrichmentEligible": true,
-      "enrichmentReason": [
-        "INVESTOR_BUY",
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 5,
-      "industry": {
-        "status": "READY",
-        "id": "270",
-        "name": "자동차부품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -894,18 +828,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_BUY"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 6,
-            "price": 570000,
-            "changeRate": -3.72,
-            "volume": 423244,
-            "tradingValue": 246004000000,
+            "price": 566000,
+            "changeRate": -4.39,
+            "volume": 466711,
+            "tradingValue": 270683000000,
             "sourceItemcode": "006400"
           }
         ],
@@ -938,8 +870,117 @@
         "status": "READY",
         "id": "283",
         "name": "전기제품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "300080",
+      "name": "플리토",
+      "signals": [
+        "TOP_GAINER",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [
+        "VOLUME_SURGE_AND_GAIN"
+      ],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume_surge",
+            "derivedRank": 6,
+            "price": 10530,
+            "changeRate": 27.33,
+            "volume": 747897,
+            "tradingValue": 7408024000,
+            "sourceItemcode": "300080"
+          },
+          {
+            "source": "gainers",
+            "derivedRank": 7,
+            "price": 10530,
+            "changeRate": 27.33,
+            "volume": 747897,
+            "tradingValue": 7408024000,
+            "sourceItemcode": "300080"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "MOMENTUM",
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 2,
+      "familyCount": 2,
+      "bucket": "TWO_FACTOR",
+      "enrichmentEligible": true,
+      "enrichmentReason": [
+        "MOMENTUM",
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 6,
+      "industry": {
+        "status": "READY",
+        "id": "300",
+        "name": "양방향미디어와서비스",
+        "state": "MIXED",
+        "contextSignal": "MIXED"
+      }
+    },
+    {
+      "code": "419050",
+      "name": "삼기에너지솔루션즈",
+      "signals": [
+        "FOREIGNER_BUY",
+        "HIGH_VOLUME"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 6,
+            "price": 2525,
+            "changeRate": -6.31,
+            "volume": 11560962,
+            "tradingValue": 30110008000,
+            "sourceItemcode": "419050"
+          }
+        ],
+        "investors": [
+          {
+            "investorType": "FOREIGNER",
+            "side": "BUY",
+            "derivedRank": 2,
+            "accTradeVolume": 256272,
+            "accTradeAmount": 0
+          }
+        ]
+      },
+      "investorState": "FOREIGN_ONLY_BUY",
+      "supportingFamilies": [
+        "INVESTOR_BUY",
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 2,
+      "familyCount": 2,
+      "bucket": "TWO_FACTOR",
+      "enrichmentEligible": true,
+      "enrichmentReason": [
+        "INVESTOR_BUY",
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 6,
+      "industry": {
+        "status": "READY",
+        "id": "270",
+        "name": "자동차부품",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -949,27 +990,25 @@
         "HIGH_VOLUME",
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
-            "derivedRank": 6,
+            "derivedRank": 7,
             "price": 992,
             "changeRate": 12.98,
-            "volume": 11018829,
-            "tradingValue": 10888228000,
+            "volume": 11224876,
+            "tradingValue": 11090990000,
             "sourceItemcode": "012340"
           },
           {
             "source": "gainers",
-            "derivedRank": 20,
+            "derivedRank": 19,
             "price": 992,
             "changeRate": 12.98,
-            "volume": 11018829,
-            "tradingValue": 10888228000,
+            "volume": 11224876,
+            "tradingValue": 11090990000,
             "sourceItemcode": "012340"
           }
         ],
@@ -989,69 +1028,13 @@
         "VOLUME"
       ],
       "cautionSignals": [],
-      "bestRanking": 6,
+      "bestRanking": 7,
       "industry": {
         "status": "READY",
         "id": "283",
         "name": "전기제품",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "308100",
-      "name": "형지글로벌",
-      "signals": [
-        "HIGH_VOLUME",
-        "TOP_GAINER"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume",
-            "derivedRank": 18,
-            "price": 383,
-            "changeRate": 29.83,
-            "volume": 4911399,
-            "tradingValue": 1823632000,
-            "sourceItemcode": "308100"
-          },
-          {
-            "source": "gainers",
-            "derivedRank": 6,
-            "price": 383,
-            "changeRate": 29.83,
-            "volume": 4911399,
-            "tradingValue": 1823632000,
-            "sourceItemcode": "308100"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "MOMENTUM",
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 2,
-      "familyCount": 2,
-      "bucket": "TWO_FACTOR",
-      "enrichmentEligible": true,
-      "enrichmentReason": [
-        "MOMENTUM",
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 6,
-      "industry": {
-        "status": "READY",
-        "id": "274",
-        "name": "섬유,의류,신발,호화품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -1061,27 +1044,25 @@
         "HIGH_52WEEK",
         "HIGH_VOLUME"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
-            "derivedRank": 9,
-            "price": 3700,
-            "changeRate": -8.42,
-            "volume": 9142643,
-            "tradingValue": 35735000000,
+            "derivedRank": 10,
+            "price": 3710,
+            "changeRate": -8.17,
+            "volume": 9488053,
+            "tradingValue": 37003000000,
             "sourceItemcode": "010580"
           },
           {
             "source": "high_52week",
             "derivedRank": 8,
-            "price": 3700,
-            "changeRate": -8.42,
-            "volume": 9142643,
-            "tradingValue": 35735000000,
+            "price": 3710,
+            "changeRate": -8.17,
+            "volume": 9488053,
+            "tradingValue": 37003000000,
             "sourceItemcode": "010580"
           }
         ],
@@ -1106,8 +1087,62 @@
         "status": "READY",
         "id": "270",
         "name": "자동차부품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "030960",
+      "name": "양지사",
+      "signals": [
+        "HIGH_VOLUME",
+        "TOP_GAINER"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 13,
+            "price": 6810,
+            "changeRate": 18.64,
+            "volume": 7659905,
+            "tradingValue": 51187653000,
+            "sourceItemcode": "030960"
+          },
+          {
+            "source": "gainers",
+            "derivedRank": 11,
+            "price": 6810,
+            "changeRate": 18.64,
+            "volume": 7659905,
+            "tradingValue": 51187653000,
+            "sourceItemcode": "030960"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "MOMENTUM",
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 2,
+      "familyCount": 2,
+      "bucket": "TWO_FACTOR",
+      "enrichmentEligible": true,
+      "enrichmentReason": [
+        "MOMENTUM",
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 11,
+      "industry": {
+        "status": "READY",
+        "id": "324",
+        "name": "상업서비스와공급품",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -1117,27 +1152,25 @@
         "HIGH_TRADING_VALUE",
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
-            "derivedRank": 11,
-            "price": 75400,
-            "changeRate": 16.9,
-            "volume": 1705498,
-            "tradingValue": 125643000000,
+            "derivedRank": 12,
+            "price": 73500,
+            "changeRate": 13.95,
+            "volume": 1830729,
+            "tradingValue": 134920000000,
             "sourceItemcode": "007810"
           },
           {
             "source": "gainers",
-            "derivedRank": 14,
-            "price": 75400,
-            "changeRate": 16.9,
-            "volume": 1705498,
-            "tradingValue": 125643000000,
+            "derivedRank": 17,
+            "price": 73500,
+            "changeRate": 13.95,
+            "volume": 1830729,
+            "tradingValue": 134920000000,
             "sourceItemcode": "007810"
           }
         ],
@@ -1157,7 +1190,7 @@
         "MOMENTUM"
       ],
       "cautionSignals": [],
-      "bestRanking": 11,
+      "bestRanking": 12,
       "industry": {
         "status": "READY",
         "id": "282",
@@ -1167,34 +1200,34 @@
       }
     },
     {
-      "code": "030960",
-      "name": "양지사",
+      "code": "131100",
+      "name": "티엔엔터테인먼트",
       "signals": [
-        "HIGH_VOLUME",
-        "TOP_GAINER"
+        "TOP_GAINER",
+        "VOLUME_SURGE"
       ],
       "warnings": [
-        "PARTIAL_SOURCE_DATA"
+        "VOLUME_SURGE_AND_GAIN"
       ],
       "evidence": {
         "rankings": [
           {
-            "source": "volume",
-            "derivedRank": 12,
-            "price": 6800,
-            "changeRate": 18.47,
-            "volume": 7343756,
-            "tradingValue": 49045681000,
-            "sourceItemcode": "030960"
+            "source": "volume_surge",
+            "derivedRank": 16,
+            "price": 3855,
+            "changeRate": 17.71,
+            "volume": 201591,
+            "tradingValue": 751509000,
+            "sourceItemcode": "131100"
           },
           {
             "source": "gainers",
             "derivedRank": 12,
-            "price": 6800,
-            "changeRate": 18.47,
-            "volume": 7343756,
-            "tradingValue": 49045681000,
-            "sourceItemcode": "030960"
+            "price": 3855,
+            "changeRate": 17.71,
+            "volume": 201591,
+            "tradingValue": 751509000,
+            "sourceItemcode": "131100"
           }
         ],
         "investors": []
@@ -1216,8 +1249,61 @@
       "bestRanking": 12,
       "industry": {
         "status": "READY",
-        "id": "324",
-        "name": "상업서비스와공급품",
+        "id": "285",
+        "name": "방송과엔터테인먼트",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "signals": [
+        "HIGH_TRADING_VALUE",
+        "ORGANIZATION_BUY"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "trading_value",
+            "derivedRank": 13,
+            "price": 415000,
+            "changeRate": -3.94,
+            "volume": 249266,
+            "tradingValue": 104657000000,
+            "sourceItemcode": "373220"
+          }
+        ],
+        "investors": [
+          {
+            "investorType": "ORGANIZATION",
+            "side": "BUY",
+            "derivedRank": 2,
+            "accTradeVolume": 309604,
+            "accTradeAmount": 131741111000
+          }
+        ]
+      },
+      "investorState": "ORGANIZATION_ONLY_BUY",
+      "supportingFamilies": [
+        "INVESTOR_BUY",
+        "LIQUIDITY"
+      ],
+      "supportingFamilyCount": 2,
+      "familyCount": 2,
+      "bucket": "TWO_FACTOR",
+      "enrichmentEligible": true,
+      "enrichmentReason": [
+        "INVESTOR_BUY",
+        "LIQUIDITY"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 13,
+      "industry": {
+        "status": "READY",
+        "id": "283",
+        "name": "전기제품",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
@@ -1229,18 +1315,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_BUY"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
-            "derivedRank": 13,
-            "price": 308500,
-            "changeRate": -5.37,
-            "volume": 306674,
-            "tradingValue": 96673000000,
+            "derivedRank": 14,
+            "price": 307000,
+            "changeRate": -5.83,
+            "volume": 332113,
+            "tradingValue": 104509000000,
             "sourceItemcode": "005380"
           }
         ],
@@ -1268,13 +1352,13 @@
         "LIQUIDITY"
       ],
       "cautionSignals": [],
-      "bestRanking": 13,
+      "bestRanking": 14,
       "industry": {
         "status": "READY",
         "id": "273",
         "name": "자동차",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -1286,18 +1370,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_BUY"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 15,
-            "price": 196200,
-            "changeRate": -1.01,
-            "volume": 486262,
-            "tradingValue": 96104000000,
+            "price": 196300,
+            "changeRate": -0.96,
+            "volume": 518918,
+            "tradingValue": 102521000000,
             "sourceItemcode": "068270"
           }
         ],
@@ -1305,8 +1387,8 @@
           {
             "investorType": "FOREIGNER",
             "side": "BUY",
-            "derivedRank": 7,
-            "accTradeVolume": 80276,
+            "derivedRank": 8,
+            "accTradeVolume": 85030,
             "accTradeAmount": 0
           },
           {
@@ -1342,79 +1424,22 @@
       }
     },
     {
-      "code": "373220",
-      "name": "LG에너지솔루션",
-      "signals": [
-        "HIGH_TRADING_VALUE",
-        "ORGANIZATION_BUY"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "trading_value",
-            "derivedRank": 16,
-            "price": 414500,
-            "changeRate": -4.05,
-            "volume": 227769,
-            "tradingValue": 95747000000,
-            "sourceItemcode": "373220"
-          }
-        ],
-        "investors": [
-          {
-            "investorType": "ORGANIZATION",
-            "side": "BUY",
-            "derivedRank": 2,
-            "accTradeVolume": 309604,
-            "accTradeAmount": 131741111000
-          }
-        ]
-      },
-      "investorState": "ORGANIZATION_ONLY_BUY",
-      "supportingFamilies": [
-        "INVESTOR_BUY",
-        "LIQUIDITY"
-      ],
-      "supportingFamilyCount": 2,
-      "familyCount": 2,
-      "bucket": "TWO_FACTOR",
-      "enrichmentEligible": true,
-      "enrichmentReason": [
-        "INVESTOR_BUY",
-        "LIQUIDITY"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 16,
-      "industry": {
-        "status": "READY",
-        "id": "283",
-        "name": "전기제품",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
       "code": "105560",
       "name": "KB금융",
       "signals": [
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_BUY"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 17,
-            "price": 160300,
-            "changeRate": -1.48,
-            "volume": 594089,
-            "tradingValue": 96024000000,
+            "price": 160400,
+            "changeRate": -1.41,
+            "volume": 631769,
+            "tradingValue": 102059000000,
             "sourceItemcode": "105560"
           }
         ],
@@ -1459,18 +1484,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_SELL"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 1,
-            "price": 1221000,
-            "changeRate": -4.39,
-            "volume": 2195498,
-            "tradingValue": 2689457000000,
+            "price": 1213000,
+            "changeRate": -5.01,
+            "volume": 2379173,
+            "tradingValue": 2912665000000,
             "sourceItemcode": "000660"
           }
         ],
@@ -1479,7 +1502,7 @@
             "investorType": "FOREIGNER",
             "side": "SELL",
             "derivedRank": 4,
-            "accTradeVolume": -309838,
+            "accTradeVolume": -321667,
             "accTradeAmount": 0
           },
           {
@@ -1512,8 +1535,8 @@
         "status": "READY",
         "id": "278",
         "name": "반도체와반도체장비",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -1522,18 +1545,16 @@
       "signals": [
         "HIGH_VOLUME"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
             "derivedRank": 1,
-            "price": 1584,
-            "changeRate": -9.38,
-            "volume": 39321729,
-            "tradingValue": 69416000000,
+            "price": 1561,
+            "changeRate": -10.7,
+            "volume": 40155611,
+            "tradingValue": 70726000000,
             "sourceItemcode": "008970"
           }
         ],
@@ -1556,8 +1577,8 @@
         "status": "READY",
         "id": "304",
         "name": "철강",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -1566,9 +1587,7 @@
       "signals": [
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
@@ -1576,8 +1595,8 @@
             "derivedRank": 1,
             "price": 1924,
             "changeRate": 30,
-            "volume": 1066399,
-            "tradingValue": 2051000000,
+            "volume": 1071764,
+            "tradingValue": 2062000000,
             "sourceItemcode": "093240"
           }
         ],
@@ -1600,8 +1619,8 @@
         "status": "READY",
         "id": "274",
         "name": "섬유,의류,신발,호화품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -1610,18 +1629,16 @@
       "signals": [
         "HIGH_52WEEK"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "high_52week",
             "derivedRank": 2,
-            "price": 14990,
-            "changeRate": 1.49,
-            "volume": 109959,
-            "tradingValue": 1623467000,
+            "price": 14900,
+            "changeRate": 0.88,
+            "volume": 115727,
+            "tradingValue": 1709193000,
             "sourceItemcode": "051160"
           }
         ],
@@ -1644,52 +1661,8 @@
         "status": "READY",
         "id": "265",
         "name": "판매업체",
-        "state": "MIXED",
-        "contextSignal": "MIXED"
-      }
-    },
-    {
-      "code": "005160",
-      "name": "동국산업",
-      "signals": [
-        "HIGH_52WEEK"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "high_52week",
-            "derivedRank": 3,
-            "price": 4690,
-            "changeRate": -0.21,
-            "volume": 4724684,
-            "tradingValue": 22600359000,
-            "sourceItemcode": "005160"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "MOMENTUM"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "MOMENTUM"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 3,
-      "industry": {
-        "status": "READY",
-        "id": "304",
-        "name": "철강",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -1699,18 +1672,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_SELL"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 3,
-            "price": 1178000,
-            "changeRate": 0.68,
-            "volume": 460597,
-            "tradingValue": 537954000000,
+            "price": 1165000,
+            "changeRate": -0.43,
+            "volume": 506085,
+            "tradingValue": 591227000000,
             "sourceItemcode": "009150"
           }
         ],
@@ -1748,67 +1719,21 @@
       }
     },
     {
-      "code": "009190",
-      "name": "대양금속",
-      "signals": [
-        "HIGH_VOLUME"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume",
-            "derivedRank": 4,
-            "price": 908,
-            "changeRate": -7.63,
-            "volume": 11597897,
-            "tradingValue": 11395000000,
-            "sourceItemcode": "009190"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 4,
-      "industry": {
-        "status": "READY",
-        "id": "304",
-        "name": "철강",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
       "code": "033780",
       "name": "KT&G",
       "signals": [
         "HIGH_52WEEK"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "high_52week",
-            "derivedRank": 4,
-            "price": 192600,
-            "changeRate": -0.26,
-            "volume": 118634,
-            "tradingValue": 22921000000,
+            "derivedRank": 3,
+            "price": 193200,
+            "changeRate": 0.05,
+            "volume": 133585,
+            "tradingValue": 25807000000,
             "sourceItemcode": "033780"
           }
         ],
@@ -1826,11 +1751,105 @@
         "MOMENTUM"
       ],
       "cautionSignals": [],
-      "bestRanking": 4,
+      "bestRanking": 3,
       "industry": {
         "status": "READY",
         "id": "275",
         "name": "담배",
+        "state": "BROAD_STRENGTH",
+        "contextSignal": "BROAD_STRENGTH"
+      }
+    },
+    {
+      "code": "048530",
+      "name": "인트론바이오",
+      "signals": [
+        "HIGH_VOLUME",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 18,
+            "price": 3065,
+            "changeRate": 9.07,
+            "volume": 5280009,
+            "tradingValue": 16988385000,
+            "sourceItemcode": "048530"
+          },
+          {
+            "source": "volume_surge",
+            "derivedRank": 3,
+            "price": 3065,
+            "changeRate": 9.07,
+            "volume": 5280009,
+            "tradingValue": 16988385000,
+            "sourceItemcode": "048530"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 3,
+      "industry": {
+        "status": "READY",
+        "id": "262",
+        "name": "생명과학도구및서비스",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "458350",
+      "name": "에스팀",
+      "signals": [
+        "TOP_GAINER"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "gainers",
+            "derivedRank": 3,
+            "price": 3795,
+            "changeRate": 29.97,
+            "volume": 994122,
+            "tradingValue": 3585150000,
+            "sourceItemcode": "458350"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "MOMENTUM"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "MOMENTUM"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 3,
+      "industry": {
+        "status": "READY",
+        "id": "310",
+        "name": "광고",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
@@ -1841,9 +1860,7 @@
       "signals": [
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
@@ -1851,8 +1868,8 @@
             "derivedRank": 4,
             "price": 1267,
             "changeRate": 29.95,
-            "volume": 946268,
-            "tradingValue": 1157989000,
+            "volume": 948367,
+            "tradingValue": 1160648000,
             "sourceItemcode": "289220"
           }
         ],
@@ -1875,29 +1892,111 @@
         "status": "READY",
         "id": "300",
         "name": "양방향미디어와서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "MIXED",
+        "contextSignal": "MIXED"
       }
     },
     {
-      "code": "091340",
-      "name": "S&K글로벌",
+      "code": "009190",
+      "name": "대양금속",
+      "signals": [
+        "HIGH_VOLUME"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 5,
+            "price": 911,
+            "changeRate": -7.32,
+            "volume": 11945952,
+            "tradingValue": 11714000000,
+            "sourceItemcode": "009190"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 5,
+      "industry": {
+        "status": "READY",
+        "id": "304",
+        "name": "철강",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "013810",
+      "name": "스페코",
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume_surge",
+            "derivedRank": 5,
+            "price": 1524,
+            "changeRate": 8.01,
+            "volume": 536125,
+            "tradingValue": 817833000,
+            "sourceItemcode": "013810"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 5,
+      "industry": {
+        "status": "READY",
+        "id": "299",
+        "name": "기계",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "021240",
+      "name": "코웨이",
       "signals": [
         "HIGH_52WEEK"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "high_52week",
             "derivedRank": 5,
-            "price": 2790,
-            "changeRate": -0.89,
-            "volume": 45275,
-            "tradingValue": 129015000,
-            "sourceItemcode": "091340"
+            "price": 107000,
+            "changeRate": -1.29,
+            "volume": 86715,
+            "tradingValue": 9370000000,
+            "sourceItemcode": "021240"
           }
         ],
         "investors": []
@@ -1917,31 +2016,29 @@
       "bestRanking": 5,
       "industry": {
         "status": "READY",
-        "id": "282",
-        "name": "전자장비와기기",
+        "id": "298",
+        "name": "가정용기기와용품",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
     },
     {
-      "code": "021240",
-      "name": "코웨이",
+      "code": "091340",
+      "name": "S&K글로벌",
       "signals": [
         "HIGH_52WEEK"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "high_52week",
             "derivedRank": 6,
-            "price": 106900,
-            "changeRate": -1.38,
-            "volume": 77882,
-            "tradingValue": 8425000000,
-            "sourceItemcode": "021240"
+            "price": 2760,
+            "changeRate": -1.95,
+            "volume": 46960,
+            "tradingValue": 133658000,
+            "sourceItemcode": "091340"
           }
         ],
         "investors": []
@@ -1961,192 +2058,6 @@
       "bestRanking": 6,
       "industry": {
         "status": "READY",
-        "id": "298",
-        "name": "가정용기기와용품",
-        "state": "WEAK",
-        "contextSignal": "WEAK"
-      }
-    },
-    {
-      "code": "004310",
-      "name": "현대약품",
-      "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume_surge",
-            "derivedRank": 7,
-            "price": 7590,
-            "changeRate": 3.41,
-            "volume": 3700474,
-            "tradingValue": 29028000000,
-            "sourceItemcode": "004310"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 7,
-      "industry": {
-        "status": "READY",
-        "id": "261",
-        "name": "제약",
-        "state": "WEAK",
-        "contextSignal": "WEAK"
-      }
-    },
-    {
-      "code": "142280",
-      "name": "녹십자엠에스",
-      "signals": [
-        "HIGH_VOLUME",
-        "VOLUME_SURGE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume",
-            "derivedRank": 7,
-            "price": 3940,
-            "changeRate": 5.07,
-            "volume": 10107683,
-            "tradingValue": 40904695000,
-            "sourceItemcode": "142280"
-          },
-          {
-            "source": "volume_surge",
-            "derivedRank": 14,
-            "price": 3940,
-            "changeRate": 5.07,
-            "volume": 10107683,
-            "tradingValue": 40904695000,
-            "sourceItemcode": "142280"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 7,
-      "industry": {
-        "status": "READY",
-        "id": "281",
-        "name": "건강관리장비와용품",
-        "state": "WEAK",
-        "contextSignal": "WEAK"
-      }
-    },
-    {
-      "code": "453340",
-      "name": "현대그린푸드",
-      "signals": [
-        "HIGH_52WEEK"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "high_52week",
-            "derivedRank": 7,
-            "price": 19830,
-            "changeRate": -1.83,
-            "volume": 39955,
-            "tradingValue": 811000000,
-            "sourceItemcode": "453340"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "MOMENTUM"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "MOMENTUM"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 7,
-      "industry": {
-        "status": "READY",
-        "id": "268",
-        "name": "식품",
-        "state": "WEAK",
-        "contextSignal": "WEAK"
-      }
-    },
-    {
-      "code": "015260",
-      "name": "에이엔피",
-      "signals": [
-        "HIGH_VOLUME"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume",
-            "derivedRank": 8,
-            "price": 254,
-            "changeRate": -15.33,
-            "volume": 9332283,
-            "tradingValue": 2636000000,
-            "sourceItemcode": "015260"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 8,
-      "industry": {
-        "status": "READY",
         "id": "282",
         "name": "전자장비와기기",
         "state": "WEAK",
@@ -2154,47 +2065,45 @@
       }
     },
     {
-      "code": "214330",
-      "name": "금호에이치티",
+      "code": "308100",
+      "name": "형지글로벌",
       "signals": [
-        "VOLUME_SURGE"
+        "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
-            "source": "volume_surge",
-            "derivedRank": 8,
-            "price": 6240,
-            "changeRate": -21.41,
-            "volume": 600906,
-            "tradingValue": 3745000000,
-            "sourceItemcode": "214330"
+            "source": "gainers",
+            "derivedRank": 6,
+            "price": 383,
+            "changeRate": 29.83,
+            "volume": 4952910,
+            "tradingValue": 1839531000,
+            "sourceItemcode": "308100"
           }
         ],
         "investors": []
       },
       "investorState": "NONE",
       "supportingFamilies": [
-        "VOLUME"
+        "MOMENTUM"
       ],
       "supportingFamilyCount": 1,
       "familyCount": 1,
       "bucket": "SINGLE_FACTOR",
       "enrichmentEligible": false,
       "enrichmentReason": [
-        "VOLUME"
+        "MOMENTUM"
       ],
       "cautionSignals": [],
-      "bestRanking": 8,
+      "bestRanking": 6,
       "industry": {
         "status": "READY",
-        "id": "270",
-        "name": "자동차부품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "id": "274",
+        "name": "섬유,의류,신발,호화품",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -2204,18 +2113,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_SELL"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
-            "derivedRank": 8,
-            "price": 739000,
-            "changeRate": -5.26,
-            "volume": 266184,
-            "tradingValue": 198566000000,
+            "derivedRank": 7,
+            "price": 735000,
+            "changeRate": -5.77,
+            "volume": 294542,
+            "tradingValue": 219387000000,
             "sourceItemcode": "402340"
           }
         ],
@@ -2243,34 +2150,84 @@
       "cautionSignals": [
         "INSTITUTION_SELL"
       ],
-      "bestRanking": 8,
+      "bestRanking": 7,
       "industry": {
         "status": "READY",
         "id": "278",
         "name": "반도체와반도체장비",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
-      "code": "0161M0",
-      "name": "네오사피엔스",
+      "code": "453340",
+      "name": "현대그린푸드",
       "signals": [
-        "VOLUME_SURGE"
+        "HIGH_52WEEK"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
+            "source": "high_52week",
+            "derivedRank": 7,
+            "price": 19720,
+            "changeRate": -2.38,
+            "volume": 42448,
+            "tradingValue": 860000000,
+            "sourceItemcode": "453340"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "MOMENTUM"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "MOMENTUM"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 7,
+      "industry": {
+        "status": "READY",
+        "id": "268",
+        "name": "식품",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "142280",
+      "name": "녹십자엠에스",
+      "signals": [
+        "HIGH_VOLUME",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 8,
+            "price": 3965,
+            "changeRate": 5.73,
+            "volume": 10885255,
+            "tradingValue": 44012730000,
+            "sourceItemcode": "142280"
+          },
+          {
             "source": "volume_surge",
-            "derivedRank": 9,
-            "price": 8360,
-            "changeRate": -2.68,
-            "volume": 2548007,
-            "tradingValue": 22567946000,
-            "sourceItemcode": "0161M0"
+            "derivedRank": 19,
+            "price": 3965,
+            "changeRate": 5.73,
+            "volume": 10885255,
+            "tradingValue": 44012730000,
+            "sourceItemcode": "142280"
           }
         ],
         "investors": []
@@ -2286,14 +2243,96 @@
       "enrichmentReason": [
         "VOLUME"
       ],
-      "cautionSignals": [
-        "UNUSUAL_CODE_FORMAT"
+      "cautionSignals": [],
+      "bestRanking": 8,
+      "industry": {
+        "status": "READY",
+        "id": "281",
+        "name": "건강관리장비와용품",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "015260",
+      "name": "에이엔피",
+      "signals": [
+        "HIGH_VOLUME"
       ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 9,
+            "price": 253,
+            "changeRate": -15.67,
+            "volume": 9871084,
+            "tradingValue": 2773000000,
+            "sourceItemcode": "015260"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
       "bestRanking": 9,
       "industry": {
         "status": "READY",
-        "id": "287",
-        "name": "소프트웨어",
+        "id": "282",
+        "name": "전자장비와기기",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "024740",
+      "name": "한일단조",
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume_surge",
+            "derivedRank": 9,
+            "price": 2235,
+            "changeRate": 5.67,
+            "volume": 1406089,
+            "tradingValue": 3142325000,
+            "sourceItemcode": "024740"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 9,
+      "industry": {
+        "status": "READY",
+        "id": "270",
+        "name": "자동차부품",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
@@ -2305,18 +2344,16 @@
         "FOREIGNER_SELL",
         "HIGH_TRADING_VALUE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 9,
-            "price": 134000,
-            "changeRate": 0.15,
-            "volume": 1121058,
-            "tradingValue": 152659000000,
+            "price": 133900,
+            "changeRate": 0.07,
+            "volume": 1209041,
+            "tradingValue": 164457000000,
             "sourceItemcode": "353200"
           }
         ],
@@ -2324,8 +2361,8 @@
           {
             "investorType": "FOREIGNER",
             "side": "SELL",
-            "derivedRank": 14,
-            "accTradeVolume": -164711,
+            "derivedRank": 15,
+            "accTradeVolume": -170454,
             "accTradeAmount": 0
           }
         ]
@@ -2359,18 +2396,16 @@
       "signals": [
         "HIGH_TRADING_VALUE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
             "derivedRank": 10,
-            "price": 203000,
-            "changeRate": -3.1,
-            "volume": 643911,
-            "tradingValue": 130080606000,
+            "price": 201500,
+            "changeRate": -3.82,
+            "volume": 681416,
+            "tradingValue": 137649267000,
             "sourceItemcode": "036930"
           }
         ],
@@ -2393,148 +2428,69 @@
         "status": "READY",
         "id": "278",
         "name": "반도체와반도체장비",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
-      "code": "065450",
-      "name": "빅텍",
+      "code": "012450",
+      "name": "한화에어로스페이스",
       "signals": [
-        "FOREIGNER_SELL",
-        "HIGH_VOLUME",
-        "VOLUME_SURGE"
+        "HIGH_TRADING_VALUE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
-            "source": "volume",
-            "derivedRank": 15,
-            "price": 3095,
-            "changeRate": 6.17,
-            "volume": 5465733,
-            "tradingValue": 16927308000,
-            "sourceItemcode": "065450"
-          },
-          {
-            "source": "volume_surge",
-            "derivedRank": 10,
-            "price": 3095,
-            "changeRate": 6.17,
-            "volume": 5465733,
-            "tradingValue": 16927308000,
-            "sourceItemcode": "065450"
-          }
-        ],
-        "investors": [
-          {
-            "investorType": "FOREIGNER",
-            "side": "SELL",
+            "source": "trading_value",
             "derivedRank": 11,
-            "accTradeVolume": -175305,
-            "accTradeAmount": 0
-          }
-        ]
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [
-        "FOREIGN_SELL"
-      ],
-      "bestRanking": 10,
-      "industry": {
-        "status": "READY",
-        "id": "284",
-        "name": "우주항공과국방",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "456160",
-      "name": "지투지바이오",
-      "signals": [
-        "TOP_GAINER"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "gainers",
-            "derivedRank": 10,
-            "price": 38400,
-            "changeRate": 19.25,
-            "volume": 480823,
-            "tradingValue": 17583154000,
-            "sourceItemcode": "456160"
+            "price": 798000,
+            "changeRate": -11.82,
+            "volume": 165706,
+            "tradingValue": 135059000000,
+            "sourceItemcode": "012450"
           }
         ],
         "investors": []
       },
       "investorState": "NONE",
       "supportingFamilies": [
-        "MOMENTUM"
+        "LIQUIDITY"
       ],
       "supportingFamilyCount": 1,
       "familyCount": 1,
       "bucket": "SINGLE_FACTOR",
       "enrichmentEligible": false,
       "enrichmentReason": [
-        "MOMENTUM"
+        "LIQUIDITY"
       ],
       "cautionSignals": [],
-      "bestRanking": 10,
+      "bestRanking": 11,
       "industry": {
         "status": "READY",
-        "id": "261",
-        "name": "제약",
+        "id": "284",
+        "name": "우주항공과국방",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
     },
     {
-      "code": "014950",
-      "name": "삼익제약",
+      "code": "214330",
+      "name": "금호에이치티",
       "signals": [
-        "HIGH_VOLUME",
         "VOLUME_SURGE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
-            "source": "volume",
-            "derivedRank": 11,
-            "price": 8480,
-            "changeRate": 6.94,
-            "volume": 7793177,
-            "tradingValue": 70417697000,
-            "sourceItemcode": "014950"
-          },
-          {
             "source": "volume_surge",
-            "derivedRank": 12,
-            "price": 8480,
-            "changeRate": 6.94,
-            "volume": 7793177,
-            "tradingValue": 70417697000,
-            "sourceItemcode": "014950"
+            "derivedRank": 11,
+            "price": 6920,
+            "changeRate": -12.85,
+            "volume": 732805,
+            "tradingValue": 4615000000,
+            "sourceItemcode": "214330"
           }
         ],
         "investors": []
@@ -2554,6 +2510,186 @@
       "bestRanking": 11,
       "industry": {
         "status": "READY",
+        "id": "270",
+        "name": "자동차부품",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "004310",
+      "name": "현대약품",
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume_surge",
+            "derivedRank": 12,
+            "price": 7560,
+            "changeRate": 3,
+            "volume": 3756243,
+            "tradingValue": 29450000000,
+            "sourceItemcode": "004310"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 12,
+      "industry": {
+        "status": "READY",
+        "id": "261",
+        "name": "제약",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "014950",
+      "name": "삼익제약",
+      "signals": [
+        "HIGH_VOLUME",
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 12,
+            "price": 8380,
+            "changeRate": 5.67,
+            "volume": 7939542,
+            "tradingValue": 71647532000,
+            "sourceItemcode": "014950"
+          },
+          {
+            "source": "volume_surge",
+            "derivedRank": 15,
+            "price": 8380,
+            "changeRate": 5.67,
+            "volume": 7939542,
+            "tradingValue": 71647532000,
+            "sourceItemcode": "014950"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 12,
+      "industry": {
+        "status": "READY",
+        "id": "261",
+        "name": "제약",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "0161M0",
+      "name": "네오사피엔스",
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume_surge",
+            "derivedRank": 13,
+            "price": 8130,
+            "changeRate": -5.36,
+            "volume": 2647921,
+            "tradingValue": 23389699000,
+            "sourceItemcode": "0161M0"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [
+        "UNUSUAL_CODE_FORMAT"
+      ],
+      "bestRanking": 13,
+      "industry": {
+        "status": "READY",
+        "id": "287",
+        "name": "소프트웨어",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "456160",
+      "name": "지투지바이오",
+      "signals": [
+        "TOP_GAINER"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "gainers",
+            "derivedRank": 13,
+            "price": 37850,
+            "changeRate": 17.55,
+            "volume": 536494,
+            "tradingValue": 19721415000,
+            "sourceItemcode": "456160"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "MOMENTUM"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "MOMENTUM"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 13,
+      "industry": {
+        "status": "READY",
         "id": "261",
         "name": "제약",
         "state": "WEAK",
@@ -2568,27 +2704,25 @@
         "HIGH_VOLUME",
         "VOLUME_SURGE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
-            "derivedRank": 13,
-            "price": 2555,
-            "changeRate": 1.19,
-            "volume": 7004987,
-            "tradingValue": 18600968000,
+            "derivedRank": 14,
+            "price": 2565,
+            "changeRate": 1.58,
+            "volume": 7166601,
+            "tradingValue": 19014269000,
             "sourceItemcode": "067290"
           },
           {
             "source": "volume_surge",
-            "derivedRank": 11,
-            "price": 2555,
-            "changeRate": 1.19,
-            "volume": 7004987,
-            "tradingValue": 18600968000,
+            "derivedRank": 14,
+            "price": 2565,
+            "changeRate": 1.58,
+            "volume": 7166601,
+            "tradingValue": 19014269000,
             "sourceItemcode": "067290"
           }
         ],
@@ -2616,7 +2750,7 @@
       "cautionSignals": [
         "FOREIGN_SELL"
       ],
-      "bestRanking": 11,
+      "bestRanking": 14,
       "industry": {
         "status": "READY",
         "id": "261",
@@ -2626,210 +2760,21 @@
       }
     },
     {
-      "code": "131100",
-      "name": "티엔엔터테인먼트",
-      "signals": [
-        "TOP_GAINER"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "gainers",
-            "derivedRank": 11,
-            "price": 3900,
-            "changeRate": 19.08,
-            "volume": 132130,
-            "tradingValue": 480879000,
-            "sourceItemcode": "131100"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "MOMENTUM"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "MOMENTUM"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 11,
-      "industry": {
-        "status": "READY",
-        "id": "285",
-        "name": "방송과엔터테인먼트",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "012450",
-      "name": "한화에어로스페이스",
-      "signals": [
-        "HIGH_TRADING_VALUE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "trading_value",
-            "derivedRank": 12,
-            "price": 792000,
-            "changeRate": -12.49,
-            "volume": 150710,
-            "tradingValue": 123125000000,
-            "sourceItemcode": "012450"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "LIQUIDITY"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "LIQUIDITY"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 12,
-      "industry": {
-        "status": "READY",
-        "id": "284",
-        "name": "우주항공과국방",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "950130",
-      "name": "엑세스바이오",
-      "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume_surge",
-            "derivedRank": 13,
-            "price": 2165,
-            "changeRate": 7.71,
-            "volume": 446790,
-            "tradingValue": 990295000,
-            "sourceItemcode": "950130"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 13,
-      "industry": {
-        "status": "READY",
-        "id": "262",
-        "name": "생명과학도구및서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "272210",
-      "name": "한화시스템",
-      "signals": [
-        "FOREIGNER_SELL",
-        "HIGH_TRADING_VALUE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "trading_value",
-            "derivedRank": 14,
-            "price": 71400,
-            "changeRate": -12.93,
-            "volume": 1311392,
-            "tradingValue": 96090000000,
-            "sourceItemcode": "272210"
-          }
-        ],
-        "investors": [
-          {
-            "investorType": "FOREIGNER",
-            "side": "SELL",
-            "derivedRank": 6,
-            "accTradeVolume": -246856,
-            "accTradeAmount": 0
-          }
-        ]
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "LIQUIDITY"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "LIQUIDITY"
-      ],
-      "cautionSignals": [
-        "FOREIGN_SELL"
-      ],
-      "bestRanking": 14,
-      "industry": {
-        "status": "READY",
-        "id": "284",
-        "name": "우주항공과국방",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
       "code": "046970",
       "name": "우리로",
       "signals": [
         "HIGH_VOLUME"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume",
             "derivedRank": 16,
-            "price": 8410,
-            "changeRate": 0.36,
-            "volume": 5258145,
-            "tradingValue": 45552102000,
+            "price": 8450,
+            "changeRate": 0.84,
+            "volume": 5411818,
+            "tradingValue": 46846002000,
             "sourceItemcode": "046970"
           }
         ],
@@ -2857,112 +2802,75 @@
       }
     },
     {
-      "code": "117730",
-      "name": "티로보틱스",
+      "code": "272210",
+      "name": "한화시스템",
       "signals": [
-        "VOLUME_SURGE"
+        "FOREIGNER_SELL",
+        "HIGH_TRADING_VALUE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
-            "source": "volume_surge",
+            "source": "trading_value",
             "derivedRank": 16,
-            "price": 13120,
-            "changeRate": 4.29,
-            "volume": 257972,
-            "tradingValue": 3442315000,
-            "sourceItemcode": "117730"
+            "price": 71300,
+            "changeRate": -13.05,
+            "volume": 1397315,
+            "tradingValue": 102212000000,
+            "sourceItemcode": "272210"
           }
         ],
-        "investors": []
+        "investors": [
+          {
+            "investorType": "FOREIGNER",
+            "side": "SELL",
+            "derivedRank": 6,
+            "accTradeVolume": -261207,
+            "accTradeAmount": 0
+          }
+        ]
       },
       "investorState": "NONE",
       "supportingFamilies": [
-        "VOLUME"
+        "LIQUIDITY"
       ],
       "supportingFamilyCount": 1,
       "familyCount": 1,
       "bucket": "SINGLE_FACTOR",
       "enrichmentEligible": false,
       "enrichmentReason": [
-        "VOLUME"
+        "LIQUIDITY"
       ],
-      "cautionSignals": [],
+      "cautionSignals": [
+        "FOREIGN_SELL"
+      ],
       "bestRanking": 16,
       "industry": {
         "status": "READY",
-        "id": "299",
-        "name": "기계",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "id": "284",
+        "name": "우주항공과국방",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
-      "code": "126340",
-      "name": "비나텍",
-      "signals": [
-        "TOP_GAINER"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "gainers",
-            "derivedRank": 16,
-            "price": 93500,
-            "changeRate": 14.02,
-            "volume": 355829,
-            "tradingValue": 33178086000,
-            "sourceItemcode": "126340"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "MOMENTUM"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "MOMENTUM"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 16,
-      "industry": {
-        "status": "READY",
-        "id": "306",
-        "name": "전기장비",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "092440",
-      "name": "기신정기",
+      "code": "950130",
+      "name": "엑세스바이오",
       "signals": [
         "VOLUME_SURGE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume_surge",
             "derivedRank": 17,
-            "price": 1797,
-            "changeRate": -1.21,
-            "volume": 68102,
-            "tradingValue": 122000000,
-            "sourceItemcode": "092440"
+            "price": 2140,
+            "changeRate": 6.47,
+            "volume": 454735,
+            "tradingValue": 1007310000,
+            "sourceItemcode": "950130"
           }
         ],
         "investors": []
@@ -2982,75 +2890,29 @@
       "bestRanking": 17,
       "industry": {
         "status": "READY",
-        "id": "299",
-        "name": "기계",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "042510",
-      "name": "라온시큐어",
-      "signals": [
-        "HIGH_TRADING_VALUE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "trading_value",
-            "derivedRank": 18,
-            "price": 19570,
-            "changeRate": -0.71,
-            "volume": 4206141,
-            "tradingValue": 87183941000,
-            "sourceItemcode": "042510"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "LIQUIDITY"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "LIQUIDITY"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 18,
-      "industry": {
-        "status": "READY",
-        "id": "287",
-        "name": "소프트웨어",
+        "id": "262",
+        "name": "생명과학도구및서비스",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
     },
     {
-      "code": "393210",
-      "name": "토마토시스템",
+      "code": "092440",
+      "name": "기신정기",
       "signals": [
         "VOLUME_SURGE"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "volume_surge",
             "derivedRank": 18,
-            "price": 3365,
-            "changeRate": 4.5,
-            "volume": 3557940,
-            "tradingValue": 12578227000,
-            "sourceItemcode": "393210"
+            "price": 1794,
+            "changeRate": -1.37,
+            "volume": 82275,
+            "tradingValue": 148000000,
+            "sourceItemcode": "092440"
           }
         ],
         "investors": []
@@ -3070,75 +2932,29 @@
       "bestRanking": 18,
       "industry": {
         "status": "READY",
-        "id": "267",
-        "name": "IT서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "002720",
-      "name": "국제약품",
-      "signals": [
-        "HIGH_VOLUME"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume",
-            "derivedRank": 19,
-            "price": 3910,
-            "changeRate": -1.88,
-            "volume": 4827114,
-            "tradingValue": 19971000000,
-            "sourceItemcode": "002720"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 19,
-      "industry": {
-        "status": "READY",
-        "id": "261",
-        "name": "제약",
+        "id": "299",
+        "name": "기계",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
     },
     {
-      "code": "089230",
-      "name": "THE E&M",
+      "code": "126340",
+      "name": "비나텍",
       "signals": [
         "TOP_GAINER"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "gainers",
-            "derivedRank": 19,
-            "price": 2865,
-            "changeRate": 13.47,
-            "volume": 1644917,
-            "tradingValue": 4263185000,
-            "sourceItemcode": "089230"
+            "derivedRank": 18,
+            "price": 93300,
+            "changeRate": 13.78,
+            "volume": 423299,
+            "tradingValue": 39561119000,
+            "sourceItemcode": "126340"
           }
         ],
         "investors": []
@@ -3155,101 +2971,13 @@
         "MOMENTUM"
       ],
       "cautionSignals": [],
-      "bestRanking": 19,
+      "bestRanking": 18,
       "industry": {
         "status": "READY",
-        "id": "300",
-        "name": "양방향미디어와서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "232830",
-      "name": "아이티센피엔에스",
-      "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume_surge",
-            "derivedRank": 19,
-            "price": 2280,
-            "changeRate": -8.06,
-            "volume": 173539,
-            "tradingValue": 413221000,
-            "sourceItemcode": "232830"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 19,
-      "industry": {
-        "status": "READY",
-        "id": "267",
-        "name": "IT서비스",
-        "state": null,
-        "contextSignal": "NOT_READY"
-      }
-    },
-    {
-      "code": "014990",
-      "name": "인디에프",
-      "signals": [
-        "VOLUME_SURGE"
-      ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
-      "evidence": {
-        "rankings": [
-          {
-            "source": "volume_surge",
-            "derivedRank": 20,
-            "price": 3115,
-            "changeRate": -18.03,
-            "volume": 409907,
-            "tradingValue": 1341000000,
-            "sourceItemcode": "014990"
-          }
-        ],
-        "investors": []
-      },
-      "investorState": "NONE",
-      "supportingFamilies": [
-        "VOLUME"
-      ],
-      "supportingFamilyCount": 1,
-      "familyCount": 1,
-      "bucket": "SINGLE_FACTOR",
-      "enrichmentEligible": false,
-      "enrichmentReason": [
-        "VOLUME"
-      ],
-      "cautionSignals": [],
-      "bestRanking": 20,
-      "industry": {
-        "status": "READY",
-        "id": "274",
-        "name": "섬유,의류,신발,호화품",
-        "state": null,
-        "contextSignal": "NOT_READY"
+        "id": "306",
+        "name": "전기장비",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
       }
     },
     {
@@ -3259,18 +2987,16 @@
         "HIGH_TRADING_VALUE",
         "ORGANIZATION_SELL"
       ],
-      "warnings": [
-        "PARTIAL_SOURCE_DATA"
-      ],
+      "warnings": [],
       "evidence": {
         "rankings": [
           {
             "source": "trading_value",
-            "derivedRank": 20,
-            "price": 126800,
-            "changeRate": 0.08,
-            "volume": 670765,
-            "tradingValue": 84898977000,
+            "derivedRank": 18,
+            "price": 124800,
+            "changeRate": -1.5,
+            "volume": 761502,
+            "tradingValue": 96262545000,
             "sourceItemcode": "222800"
           }
         ],
@@ -3298,11 +3024,137 @@
       "cautionSignals": [
         "INSTITUTION_SELL"
       ],
-      "bestRanking": 20,
+      "bestRanking": 18,
       "industry": {
         "status": "READY",
         "id": "282",
         "name": "전자장비와기기",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "002720",
+      "name": "국제약품",
+      "signals": [
+        "HIGH_VOLUME"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume",
+            "derivedRank": 20,
+            "price": 3950,
+            "changeRate": -0.88,
+            "volume": 5014008,
+            "tradingValue": 20710000000,
+            "sourceItemcode": "002720"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 20,
+      "industry": {
+        "status": "READY",
+        "id": "261",
+        "name": "제약",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "042510",
+      "name": "라온시큐어",
+      "signals": [
+        "HIGH_TRADING_VALUE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "trading_value",
+            "derivedRank": 20,
+            "price": 19000,
+            "changeRate": -3.6,
+            "volume": 4557046,
+            "tradingValue": 93853736000,
+            "sourceItemcode": "042510"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "LIQUIDITY"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "LIQUIDITY"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 20,
+      "industry": {
+        "status": "READY",
+        "id": "287",
+        "name": "소프트웨어",
+        "state": "WEAK",
+        "contextSignal": "WEAK"
+      }
+    },
+    {
+      "code": "117730",
+      "name": "티로보틱스",
+      "signals": [
+        "VOLUME_SURGE"
+      ],
+      "warnings": [],
+      "evidence": {
+        "rankings": [
+          {
+            "source": "volume_surge",
+            "derivedRank": 20,
+            "price": 13030,
+            "changeRate": 3.58,
+            "volume": 272863,
+            "tradingValue": 3637547000,
+            "sourceItemcode": "117730"
+          }
+        ],
+        "investors": []
+      },
+      "investorState": "NONE",
+      "supportingFamilies": [
+        "VOLUME"
+      ],
+      "supportingFamilyCount": 1,
+      "familyCount": 1,
+      "bucket": "SINGLE_FACTOR",
+      "enrichmentEligible": false,
+      "enrichmentReason": [
+        "VOLUME"
+      ],
+      "cautionSignals": [],
+      "bestRanking": 20,
+      "industry": {
+        "status": "READY",
+        "id": "299",
+        "name": "기계",
         "state": "WEAK",
         "contextSignal": "WEAK"
       }
@@ -3329,7 +3181,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "BUY",
-                "accTradeVolume": 369210,
+                "accTradeVolume": 831781,
                 "accTradeAmount": 0
               },
               {
@@ -3512,16 +3364,16 @@
         "alignment": "MULTI_PERIOD"
       },
       {
-        "code": "419050",
-        "name": "삼기에너지솔루션즈",
+        "code": "065450",
+        "name": "빅텍",
         "periods": [
           {
             "periodType": "DAY",
             "directions": [
               {
                 "investorType": "FOREIGNER",
-                "side": "BUY",
-                "accTradeVolume": 256272,
+                "side": "SELL",
+                "accTradeVolume": -175305,
                 "accTradeAmount": 0
               }
             ]
@@ -3623,6 +3475,24 @@
         "alignment": "MULTI_PERIOD"
       },
       {
+        "code": "419050",
+        "name": "삼기에너지솔루션즈",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 256272,
+                "accTradeAmount": 0
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      },
+      {
         "code": "007810",
         "name": "코리아써키트",
         "periods": [
@@ -3660,168 +3530,6 @@
                 "derivedRank": 97,
                 "accTradeVolume": -1134902,
                 "accTradeAmount": -53709317000,
-                "bizdateFrom": "20260721",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
-        "code": "005380",
-        "name": "현대차",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "accTradeVolume": 127828,
-                "accTradeAmount": 41019983000
-              }
-            ]
-          },
-          {
-            "periodType": "WEEK",
-            "directions": [
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 9,
-                "accTradeVolume": 513695,
-                "accTradeAmount": 158692607000,
-                "bizdateFrom": "20261013",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "derivedRank": 7,
-                "accTradeVolume": -1177554,
-                "accTradeAmount": -408432268000,
-                "bizdateFrom": "20260916",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "THREE_MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "derivedRank": 9,
-                "accTradeVolume": -1407022,
-                "accTradeAmount": -509802593000,
-                "bizdateFrom": "20260721",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "SELL",
-                "derivedRank": 12,
-                "accTradeVolume": -1853167,
-                "accTradeAmount": -755195666000,
-                "bizdateFrom": "20260721",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "MULTI_PERIOD"
-      },
-      {
-        "code": "068270",
-        "name": "셀트리온",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "accTradeVolume": 80276,
-                "accTradeAmount": 0
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "accTradeVolume": 191654,
-                "accTradeAmount": 37466935000
-              }
-            ]
-          },
-          {
-            "periodType": "WEEK",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 9,
-                "accTradeVolume": 211241,
-                "accTradeAmount": 41684047000,
-                "bizdateFrom": "20261013",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 8,
-                "accTradeVolume": 906173,
-                "accTradeAmount": 169420894000,
-                "bizdateFrom": "20261013",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 13,
-                "accTradeVolume": 1086426,
-                "accTradeAmount": 202584265000,
-                "bizdateFrom": "20260916",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              }
-            ]
-          },
-          {
-            "periodType": "THREE_MONTH",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "BUY",
-                "derivedRank": 19,
-                "accTradeVolume": 974901,
-                "accTradeAmount": 200472607000,
-                "bizdateFrom": "20260721",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              },
-              {
-                "investorType": "ORGANIZATION",
-                "side": "BUY",
-                "derivedRank": 33,
-                "accTradeVolume": 1100607,
-                "accTradeAmount": 206393745000,
                 "bizdateFrom": "20260721",
                 "bizdateTo": "20261019",
                 "toRankingAt": null
@@ -3915,6 +3623,168 @@
                 "derivedRank": 2,
                 "accTradeVolume": 2212751,
                 "accTradeAmount": 861537137000,
+                "bizdateFrom": "20260721",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "005380",
+        "name": "현대차",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "accTradeVolume": 127828,
+                "accTradeAmount": 41019983000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 9,
+                "accTradeVolume": 513695,
+                "accTradeAmount": 158692607000,
+                "bizdateFrom": "20261013",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 7,
+                "accTradeVolume": -1177554,
+                "accTradeAmount": -408432268000,
+                "bizdateFrom": "20260916",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 9,
+                "accTradeVolume": -1407022,
+                "accTradeAmount": -509802593000,
+                "bizdateFrom": "20260721",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 12,
+                "accTradeVolume": -1853167,
+                "accTradeAmount": -755195666000,
+                "bizdateFrom": "20260721",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "068270",
+        "name": "셀트리온",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 85030,
+                "accTradeAmount": 0
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "accTradeVolume": 191654,
+                "accTradeAmount": 37466935000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 9,
+                "accTradeVolume": 211241,
+                "accTradeAmount": 41684047000,
+                "bizdateFrom": "20261013",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 8,
+                "accTradeVolume": 906173,
+                "accTradeAmount": 169420894000,
+                "bizdateFrom": "20261013",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 13,
+                "accTradeVolume": 1086426,
+                "accTradeAmount": 202584265000,
+                "bizdateFrom": "20260916",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 19,
+                "accTradeVolume": 974901,
+                "accTradeAmount": 200472607000,
+                "bizdateFrom": "20260721",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 33,
+                "accTradeVolume": 1100607,
+                "accTradeAmount": 206393745000,
                 "bizdateFrom": "20260721",
                 "bizdateTo": "20261019",
                 "toRankingAt": null
@@ -4027,7 +3897,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "SELL",
-                "accTradeVolume": -309838,
+                "accTradeVolume": -321667,
                 "accTradeAmount": 0
               },
               {
@@ -4432,28 +4302,6 @@
         "alignment": "MULTI_PERIOD"
       },
       {
-        "code": "0161M0",
-        "name": "네오사피엔스",
-        "periods": [
-          {
-            "periodType": "MONTH",
-            "directions": [
-              {
-                "investorType": "ORGANIZATION",
-                "side": "SELL",
-                "derivedRank": 72,
-                "accTradeVolume": -1559116,
-                "accTradeAmount": -34632148000,
-                "bizdateFrom": "20260916",
-                "bizdateTo": "20261019",
-                "toRankingAt": null
-              }
-            ]
-          }
-        ],
-        "alignment": "DAY_ONLY"
-      },
-      {
         "code": "353200",
         "name": "대덕전자",
         "periods": [
@@ -4463,7 +4311,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "SELL",
-                "accTradeVolume": -164711,
+                "accTradeVolume": -170454,
                 "accTradeAmount": 0
               }
             ]
@@ -4619,42 +4467,6 @@
         "alignment": "MULTI_PERIOD"
       },
       {
-        "code": "065450",
-        "name": "빅텍",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "accTradeVolume": -175305,
-                "accTradeAmount": 0
-              }
-            ]
-          }
-        ],
-        "alignment": "DAY_ONLY"
-      },
-      {
-        "code": "067290",
-        "name": "JW신약",
-        "periods": [
-          {
-            "periodType": "DAY",
-            "directions": [
-              {
-                "investorType": "FOREIGNER",
-                "side": "SELL",
-                "accTradeVolume": -393112,
-                "accTradeAmount": 0
-              }
-            ]
-          }
-        ],
-        "alignment": "DAY_ONLY"
-      },
-      {
         "code": "012450",
         "name": "한화에어로스페이스",
         "periods": [
@@ -4727,6 +4539,46 @@
         "alignment": "MULTI_PERIOD"
       },
       {
+        "code": "0161M0",
+        "name": "네오사피엔스",
+        "periods": [
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 72,
+                "accTradeVolume": -1559116,
+                "accTradeAmount": -34632148000,
+                "bizdateFrom": "20260916",
+                "bizdateTo": "20261019",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      },
+      {
+        "code": "067290",
+        "name": "JW신약",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "accTradeVolume": -393112,
+                "accTradeAmount": 0
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      },
+      {
         "code": "272210",
         "name": "한화시스템",
         "periods": [
@@ -4736,7 +4588,7 @@
               {
                 "investorType": "FOREIGNER",
                 "side": "SELL",
-                "accTradeVolume": -246856,
+                "accTradeVolume": -261207,
                 "accTradeAmount": 0
               }
             ]
