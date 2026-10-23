@@ -1,38 +1,873 @@
 {
-  "generatedAt": "2026-10-23T10:24:14.723928+09:00",
-  "sourceGeneratedAt": "2026-10-23T09:46:55.124776+09:00",
-  "status": "STALE",
+  "generatedAt": "2026-10-23T11:07:52.361988+09:00",
+  "sourceGeneratedAt": "2026-10-23T11:00:52.316651+09:00",
+  "status": "PARTIAL",
   "freshness": {
-    "status": "STALE",
-    "sourceGeneratedAt": "2026-10-23T09:46:55.124776+09:00",
-    "ageMinutes": 37.33,
+    "status": "PARTIAL",
+    "sourceGeneratedAt": "2026-10-23T11:00:52.316651+09:00",
+    "ageMinutes": 7.0,
     "warnings": [
-      "STALE_SOURCE"
+      "PARTIAL_SOURCE_DATA"
     ]
   },
   "snapshotCountToday": 1,
   "candidateCount": {
-    "current": 0,
-    "change": 0
+    "current": 62,
+    "change": 62
   },
   "enrichmentEligibleCount": {
-    "current": 0,
-    "change": 0
+    "current": 20,
+    "change": 20
   },
   "bucketCounts": {
     "current": {
-      "MULTI_FACTOR": 0,
-      "TWO_FACTOR": 0,
-      "SINGLE_FACTOR": 0
+      "MULTI_FACTOR": 4,
+      "TWO_FACTOR": 16,
+      "SINGLE_FACTOR": 42
     },
     "change": {
-      "MULTI_FACTOR": 0,
-      "TWO_FACTOR": 0,
-      "SINGLE_FACTOR": 0
+      "MULTI_FACTOR": 4,
+      "TWO_FACTOR": 16,
+      "SINGLE_FACTOR": 42
     }
   },
   "changes": {
-    "NEW": [],
+    "NEW": [
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "BOTH_SELL",
+          "FOREIGN_SELL",
+          "INSTITUTION_SELL"
+        ]
+      },
+      {
+        "code": "0013Y0",
+        "name": "엠에스바이오",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": [
+          "UNUSUAL_CODE_FORMAT"
+        ]
+      },
+      {
+        "code": "0015M0",
+        "name": "디티에스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 3,
+        "cautionSignals": [
+          "UNUSUAL_CODE_FORMAT"
+        ]
+      },
+      {
+        "code": "002290",
+        "name": "삼일기업공사",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "0035S0",
+        "name": "빅웨이브로보틱스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "UNUSUAL_CODE_FORMAT"
+        ]
+      },
+      {
+        "code": "004415",
+        "name": "서울식품우",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "005380",
+        "name": "현대차",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "INSTITUTION_SELL"
+        ]
+      },
+      {
+        "code": "005870",
+        "name": "휴니드",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "005930",
+        "name": "삼성전자",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": [
+          "BOTH_SELL",
+          "FOREIGN_SELL",
+          "INSTITUTION_SELL"
+        ]
+      },
+      {
+        "code": "005935",
+        "name": "삼성전자우",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "006400",
+        "name": "삼성SDI",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "INSTITUTION_SELL"
+        ]
+      },
+      {
+        "code": "009150",
+        "name": "삼성전기",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "INSTITUTION_SELL"
+        ]
+      },
+      {
+        "code": "010120",
+        "name": "LS ELECTRIC",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "010170",
+        "name": "대한광통신",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "013810",
+        "name": "스페코",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "0158S0",
+        "name": "엘리스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 3,
+        "cautionSignals": [
+          "UNUSUAL_CODE_FORMAT"
+        ]
+      },
+      {
+        "code": "019685",
+        "name": "대교우B",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "024740",
+        "name": "한일단조",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "028050",
+        "name": "삼성E&A",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 4,
+        "cautionSignals": []
+      },
+      {
+        "code": "032685",
+        "name": "소프트센우",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "034020",
+        "name": "두산에너빌리티",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "FOREIGN_SELL"
+        ]
+      },
+      {
+        "code": "036930",
+        "name": "주성엔지니어링",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "INSTITUTION_SELL"
+        ]
+      },
+      {
+        "code": "039860",
+        "name": "나노엔텍",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "039980",
+        "name": "폴라리스AI",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "042510",
+        "name": "라온시큐어",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "042700",
+        "name": "한미반도체",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "053290",
+        "name": "NE능률",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "053800",
+        "name": "안랩",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "060900",
+        "name": "에이전트AI",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "064480",
+        "name": "브리지텍",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "065450",
+        "name": "빅텍",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 4,
+        "cautionSignals": []
+      },
+      {
+        "code": "065510",
+        "name": "휴비츠",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "069540",
+        "name": "빛과전자",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "088340",
+        "name": "유라클",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "093050",
+        "name": "LF",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "114840",
+        "name": "아이패밀리에스씨",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "138360",
+        "name": "앤로보틱스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "170790",
+        "name": "파이오링크",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "200470",
+        "name": "에이팩트",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": [
+          "FOREIGN_SELL"
+        ]
+      },
+      {
+        "code": "207940",
+        "name": "삼성바이오로직스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "211270",
+        "name": "AP위성",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "222800",
+        "name": "심텍",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "289220",
+        "name": "자이언트스텝",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "290120",
+        "name": "DH오토리드",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "293490",
+        "name": "카카오게임즈",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "321820",
+        "name": "아티스트컴퍼니",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "335870",
+        "name": "윙스풋",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "338840",
+        "name": "와이바이오로직스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "353200",
+        "name": "대덕전자",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "356890",
+        "name": "싸이버원",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "357880",
+        "name": "SKAI",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "365900",
+        "name": "브이씨",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "376930",
+        "name": "노을",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "393210",
+        "name": "토마토시스템",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "396300",
+        "name": "HT로보틱스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "402340",
+        "name": "SK스퀘어",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "411080",
+        "name": "샌즈랩",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "434480",
+        "name": "모니터랩",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "451760",
+        "name": "컨텍",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "cautionSignals": []
+      },
+      {
+        "code": "476080",
+        "name": "M83",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "487720",
+        "name": "키움제10호스팩",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      },
+      {
+        "code": "900100",
+        "name": "파이온엑스",
+        "state": "NEW",
+        "firstSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "lastSeenAt": "2026-10-23T11:00:52.316651+09:00",
+        "consecutiveSnapshotCount": 1,
+        "appearanceCountToday": 1,
+        "active": true,
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "cautionSignals": []
+      }
+    ],
     "PERSISTENT": [],
     "STRENGTHENING": [],
     "WEAKENING": [],
@@ -41,22 +876,2329 @@
   },
   "persistentCandidates": [],
   "cautionChanges": {
-    "new": [],
+    "new": [
+      {
+        "code": "0015M0",
+        "name": "디티에스",
+        "signal": "UNUSUAL_CODE_FORMAT"
+      },
+      {
+        "code": "0158S0",
+        "name": "엘리스",
+        "signal": "UNUSUAL_CODE_FORMAT"
+      },
+      {
+        "code": "005930",
+        "name": "삼성전자",
+        "signal": "BOTH_SELL"
+      },
+      {
+        "code": "005930",
+        "name": "삼성전자",
+        "signal": "FOREIGN_SELL"
+      },
+      {
+        "code": "005930",
+        "name": "삼성전자",
+        "signal": "INSTITUTION_SELL"
+      },
+      {
+        "code": "0013Y0",
+        "name": "엠에스바이오",
+        "signal": "UNUSUAL_CODE_FORMAT"
+      },
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "signal": "BOTH_SELL"
+      },
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "signal": "FOREIGN_SELL"
+      },
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "signal": "INSTITUTION_SELL"
+      },
+      {
+        "code": "009150",
+        "name": "삼성전기",
+        "signal": "INSTITUTION_SELL"
+      },
+      {
+        "code": "036930",
+        "name": "주성엔지니어링",
+        "signal": "INSTITUTION_SELL"
+      },
+      {
+        "code": "006400",
+        "name": "삼성SDI",
+        "signal": "INSTITUTION_SELL"
+      },
+      {
+        "code": "034020",
+        "name": "두산에너빌리티",
+        "signal": "FOREIGN_SELL"
+      },
+      {
+        "code": "005380",
+        "name": "현대차",
+        "signal": "INSTITUTION_SELL"
+      },
+      {
+        "code": "0035S0",
+        "name": "빅웨이브로보틱스",
+        "signal": "UNUSUAL_CODE_FORMAT"
+      },
+      {
+        "code": "200470",
+        "name": "에이팩트",
+        "signal": "FOREIGN_SELL"
+      }
+    ],
     "resolved": []
   },
   "industryContext": {
-    "membershipStatus": "NOT_READY",
+    "membershipStatus": "OK",
     "changes": []
   },
   "multiPeriodInvestorEvidence": {
-    "status": "NOT_READY",
-    "supportedPeriodTypes": [],
-    "notReadyPeriodTypes": [
+    "status": "OK",
+    "supportedPeriodTypes": [
       "DAY",
       "WEEK",
       "MONTH",
       "THREE_MONTH"
+    ],
+    "notReadyPeriodTypes": [],
+    "reason": null,
+    "items": [
+      {
+        "code": "065450",
+        "name": "빅텍",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 137188,
+                "accTradeAmount": 0
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 96,
+                "accTradeVolume": -1807164,
+                "accTradeAmount": -6303477000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "028050",
+        "name": "삼성E&A",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 1170804,
+                "accTradeAmount": 0
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "accTradeVolume": 1617977,
+                "accTradeAmount": 89411036000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 5,
+                "accTradeVolume": 2168745,
+                "accTradeAmount": 120684906000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 4,
+                "accTradeVolume": 2278417,
+                "accTradeAmount": 119887450000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 30,
+                "accTradeVolume": 691253,
+                "accTradeAmount": 49345232000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 17,
+                "accTradeVolume": 2698428,
+                "accTradeAmount": 139201578000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 53,
+                "accTradeVolume": 908445,
+                "accTradeAmount": 62022981000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 12,
+                "accTradeVolume": 7084606,
+                "accTradeAmount": 356224130000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "0158S0",
+        "name": "엘리스",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "accTradeVolume": 113519,
+                "accTradeAmount": 10217912000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 77,
+                "accTradeVolume": -114122,
+                "accTradeAmount": -8360185000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 35,
+                "accTradeVolume": -447379,
+                "accTradeAmount": -28481178000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 97,
+                "accTradeVolume": -447379,
+                "accTradeAmount": -28481178000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "005930",
+        "name": "삼성전자",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "accTradeVolume": -1146527,
+                "accTradeAmount": 0
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "accTradeVolume": -400833,
+                "accTradeAmount": -87295770000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 1,
+                "accTradeVolume": 5419132,
+                "accTradeAmount": 1185884178000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 2,
+                "accTradeVolume": -4338464,
+                "accTradeAmount": -931859664000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 2,
+                "accTradeVolume": -16856430,
+                "accTradeAmount": -4063957251000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 2,
+                "accTradeVolume": -4753252,
+                "accTradeAmount": -1148727745000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 2,
+                "accTradeVolume": -47620021,
+                "accTradeAmount": -11135288196000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 3,
+                "accTradeVolume": -7768230,
+                "accTradeAmount": -1644131655000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "0013Y0",
+        "name": "엠에스바이오",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 60,
+                "accTradeVolume": -1001969,
+                "accTradeAmount": -14662869000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      },
+      {
+        "code": "138360",
+        "name": "앤로보틱스",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 57874,
+                "accTradeAmount": 0
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      },
+      {
+        "code": "010120",
+        "name": "LS ELECTRIC",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "accTradeVolume": 48427,
+                "accTradeAmount": 7873398000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 98,
+                "accTradeVolume": -38229,
+                "accTradeAmount": -6125700000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 47,
+                "accTradeVolume": -329957,
+                "accTradeAmount": -56885736000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 49,
+                "accTradeVolume": -365024,
+                "accTradeAmount": -65653189000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 27,
+                "accTradeVolume": 677418,
+                "accTradeAmount": 146306605000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 40,
+                "accTradeVolume": -963268,
+                "accTradeAmount": -172183257000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "222800",
+        "name": "심텍",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "accTradeVolume": 69840,
+                "accTradeAmount": 8971275000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 8,
+                "accTradeVolume": -559394,
+                "accTradeAmount": -71556501000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 5,
+                "accTradeVolume": 976601,
+                "accTradeAmount": 163093907000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 11,
+                "accTradeVolume": -1448375,
+                "accTradeAmount": -217410749000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 23,
+                "accTradeVolume": 1301031,
+                "accTradeAmount": 174580951000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 28,
+                "accTradeVolume": -1821267,
+                "accTradeAmount": -239539300000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "293490",
+        "name": "카카오게임즈",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "accTradeVolume": 113342,
+                "accTradeAmount": 0
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 94,
+                "accTradeVolume": 525299,
+                "accTradeAmount": 5724399000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "353200",
+        "name": "대덕전자",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "accTradeVolume": 207620,
+                "accTradeAmount": 28077549000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 4,
+                "accTradeVolume": -1103160,
+                "accTradeAmount": -147921218000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 7,
+                "accTradeVolume": 629842,
+                "accTradeAmount": 85023247000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 15,
+                "accTradeVolume": -1638469,
+                "accTradeAmount": -220751685000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 5,
+                "accTradeVolume": 1882748,
+                "accTradeAmount": 252698716000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 86,
+                "accTradeVolume": -1411899,
+                "accTradeAmount": -67124434000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "accTradeVolume": -310107,
+                "accTradeAmount": 0
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "accTradeVolume": -210451,
+                "accTradeAmount": -262246496000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 1,
+                "accTradeVolume": -318979,
+                "accTradeAmount": -384419400000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 1,
+                "accTradeVolume": -844621,
+                "accTradeAmount": -1072054614000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 1,
+                "accTradeVolume": -9725727,
+                "accTradeAmount": -15938248342000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 4,
+                "accTradeVolume": -607857,
+                "accTradeAmount": -847597854000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 1,
+                "accTradeVolume": -18807059,
+                "accTradeAmount": -30547214322000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 1,
+                "accTradeVolume": -1558517,
+                "accTradeAmount": -2479435274000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "053800",
+        "name": "안랩",
+        "periods": [
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 76,
+                "accTradeVolume": 209722,
+                "accTradeAmount": 15285784000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 99,
+                "accTradeVolume": 362659,
+                "accTradeAmount": 25630944000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "009150",
+        "name": "삼성전기",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "accTradeVolume": -41943,
+                "accTradeAmount": -48125195000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 2,
+                "accTradeVolume": -215975,
+                "accTradeAmount": -253043357000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 5,
+                "accTradeVolume": -129960,
+                "accTradeAmount": -149653185000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 5,
+                "accTradeVolume": -459416,
+                "accTradeAmount": -506751102000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 20,
+                "accTradeVolume": 45825,
+                "accTradeAmount": 110624017000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 4,
+                "accTradeVolume": -1869195,
+                "accTradeAmount": -2365725057000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 13,
+                "accTradeVolume": 228953,
+                "accTradeAmount": 354908467000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "402340",
+        "name": "SK스퀘어",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 3,
+                "accTradeVolume": 167034,
+                "accTradeAmount": 127271986000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 4,
+                "accTradeVolume": -201764,
+                "accTradeAmount": -152006899000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 6,
+                "accTradeVolume": -460245,
+                "accTradeAmount": -501697197000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 7,
+                "accTradeVolume": 115385,
+                "accTradeAmount": 217236196000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 1,
+                "accTradeVolume": 1043626,
+                "accTradeAmount": 1015842805000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 6,
+                "accTradeVolume": -1281000,
+                "accTradeAmount": -1132038403000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "036930",
+        "name": "주성엔지니어링",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "accTradeVolume": -123907,
+                "accTradeAmount": -23947144000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 7,
+                "accTradeVolume": -445086,
+                "accTradeAmount": -91887450000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 66,
+                "accTradeVolume": -78087,
+                "accTradeAmount": -13478063000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 57,
+                "accTradeVolume": 61247,
+                "accTradeAmount": 25255309000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 65,
+                "accTradeVolume": -211017,
+                "accTradeAmount": -44653276000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 31,
+                "accTradeVolume": 904149,
+                "accTradeAmount": 117395287000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 48,
+                "accTradeVolume": 404927,
+                "accTradeAmount": 114754398000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "005935",
+        "name": "삼성전자우",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 3,
+                "accTradeVolume": -1117987,
+                "accTradeAmount": -190946251000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 45,
+                "accTradeVolume": 64566,
+                "accTradeAmount": 12191317000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 3,
+                "accTradeVolume": -4430276,
+                "accTradeAmount": -805750076000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 14,
+                "accTradeVolume": -1003605,
+                "accTradeAmount": -210522424000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 3,
+                "accTradeVolume": -12759121,
+                "accTradeAmount": -2426464644000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 16,
+                "accTradeVolume": 1426202,
+                "accTradeAmount": 312572549000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "006400",
+        "name": "삼성SDI",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "accTradeVolume": -114905,
+                "accTradeAmount": -60434124000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 6,
+                "accTradeVolume": -186908,
+                "accTradeAmount": -97804649000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 10,
+                "accTradeVolume": -571879,
+                "accTradeAmount": -304494229000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 12,
+                "accTradeVolume": 289286,
+                "accTradeAmount": 185767586000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 7,
+                "accTradeVolume": -1162387,
+                "accTradeAmount": -618500350000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 3,
+                "accTradeVolume": 1039903,
+                "accTradeAmount": 619218307000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "396300",
+        "name": "HT로보틱스",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 94,
+                "accTradeVolume": 557019,
+                "accTradeAmount": 5459588000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      },
+      {
+        "code": "042700",
+        "name": "한미반도체",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 13,
+                "accTradeVolume": -230432,
+                "accTradeAmount": -46114587000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 71,
+                "accTradeVolume": -66228,
+                "accTradeAmount": -12691551000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 50,
+                "accTradeVolume": -309661,
+                "accTradeAmount": -50543865000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 28,
+                "accTradeVolume": 327841,
+                "accTradeAmount": 81195242000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 72,
+                "accTradeVolume": -237268,
+                "accTradeAmount": -82816724000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 7,
+                "accTradeVolume": 1711050,
+                "accTradeAmount": 440724014000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "010170",
+        "name": "대한광통신",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 45,
+                "accTradeVolume": -1078699,
+                "accTradeAmount": -15094142000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 21,
+                "accTradeVolume": -7721358,
+                "accTradeAmount": -131997148000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 82,
+                "accTradeVolume": -5620784,
+                "accTradeAmount": -70498592000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "034020",
+        "name": "두산에너빌리티",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "accTradeVolume": -85510,
+                "accTradeAmount": 0
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 26,
+                "accTradeVolume": 388516,
+                "accTradeAmount": 25499598000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 28,
+                "accTradeVolume": -585643,
+                "accTradeAmount": -37733091000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 4,
+                "accTradeVolume": -6698114,
+                "accTradeAmount": -535319027000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 22,
+                "accTradeVolume": -1841516,
+                "accTradeAmount": -147759861000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 5,
+                "accTradeVolume": -13316635,
+                "accTradeAmount": -1077825844000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 22,
+                "accTradeVolume": 2862644,
+                "accTradeAmount": 246090898000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "005380",
+        "name": "현대차",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "accTradeVolume": -81329,
+                "accTradeAmount": -24520450000
+              }
+            ]
+          },
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "BUY",
+                "derivedRank": 6,
+                "accTradeVolume": 262145,
+                "accTradeAmount": 80705848000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 9,
+                "accTradeVolume": -944901,
+                "accTradeAmount": -331271969000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 57,
+                "accTradeVolume": -121503,
+                "accTradeAmount": -52970191000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 8,
+                "accTradeVolume": -1396426,
+                "accTradeAmount": -521953016000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "SELL",
+                "derivedRank": 11,
+                "accTradeVolume": -2038698,
+                "accTradeAmount": -809561100000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "207940",
+        "name": "삼성바이오로직스",
+        "periods": [
+          {
+            "periodType": "WEEK",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 5,
+                "accTradeVolume": -75437,
+                "accTradeAmount": -101744068000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 2,
+                "accTradeVolume": 171759,
+                "accTradeAmount": 234436188000,
+                "bizdateFrom": "20261016",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "MONTH",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "derivedRank": 12,
+                "accTradeVolume": -218938,
+                "accTradeAmount": -283387562000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              },
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 4,
+                "accTradeVolume": 202672,
+                "accTradeAmount": 268261615000,
+                "bizdateFrom": "20260921",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          },
+          {
+            "periodType": "THREE_MONTH",
+            "directions": [
+              {
+                "investorType": "ORGANIZATION",
+                "side": "BUY",
+                "derivedRank": 11,
+                "accTradeVolume": 266029,
+                "accTradeAmount": 376265715000,
+                "bizdateFrom": "20260724",
+                "bizdateTo": "20261022",
+                "toRankingAt": null
+              }
+            ]
+          }
+        ],
+        "alignment": "MULTI_PERIOD"
+      },
+      {
+        "code": "200470",
+        "name": "에이팩트",
+        "periods": [
+          {
+            "periodType": "DAY",
+            "directions": [
+              {
+                "investorType": "FOREIGNER",
+                "side": "SELL",
+                "accTradeVolume": -188477,
+                "accTradeAmount": 0
+              }
+            ]
+          }
+        ],
+        "alignment": "DAY_ONLY"
+      }
     ]
   },
-  "reportHighlights": []
+  "reportHighlights": [
+    {
+      "reasonType": "NEW",
+      "code": "000660",
+      "name": "SK하이닉스",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "0013Y0",
+      "name": "엠에스바이오",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "0015M0",
+      "name": "디티에스",
+      "evidence": {
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 3,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "002290",
+      "name": "삼일기업공사",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "0035S0",
+      "name": "빅웨이브로보틱스",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "004415",
+      "name": "서울식품우",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "005380",
+      "name": "현대차",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "005870",
+      "name": "휴니드",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "005930",
+      "name": "삼성전자",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "005935",
+      "name": "삼성전자우",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "006400",
+      "name": "삼성SDI",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "009150",
+      "name": "삼성전기",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "010120",
+      "name": "LS ELECTRIC",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "010170",
+      "name": "대한광통신",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "013810",
+      "name": "스페코",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "0158S0",
+      "name": "엘리스",
+      "evidence": {
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 3,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "019685",
+      "name": "대교우B",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "024740",
+      "name": "한일단조",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "028050",
+      "name": "삼성E&A",
+      "evidence": {
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 4,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "032685",
+      "name": "소프트센우",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "039860",
+      "name": "나노엔텍",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "039980",
+      "name": "폴라리스AI",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "042510",
+      "name": "라온시큐어",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "042700",
+      "name": "한미반도체",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "053290",
+      "name": "NE능률",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "053800",
+      "name": "안랩",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "060900",
+      "name": "에이전트AI",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "064480",
+      "name": "브리지텍",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "065450",
+      "name": "빅텍",
+      "evidence": {
+        "bucket": "MULTI_FACTOR",
+        "supportingFamilyCount": 4,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "065510",
+      "name": "휴비츠",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "069540",
+      "name": "빛과전자",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "088340",
+      "name": "유라클",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "093050",
+      "name": "LF",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "114840",
+      "name": "아이패밀리에스씨",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "138360",
+      "name": "앤로보틱스",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "170790",
+      "name": "파이오링크",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "200470",
+      "name": "에이팩트",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "207940",
+      "name": "삼성바이오로직스",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "211270",
+      "name": "AP위성",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "222800",
+      "name": "심텍",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "289220",
+      "name": "자이언트스텝",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "290120",
+      "name": "DH오토리드",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "293490",
+      "name": "카카오게임즈",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "321820",
+      "name": "아티스트컴퍼니",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "335870",
+      "name": "윙스풋",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "338840",
+      "name": "와이바이오로직스",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "353200",
+      "name": "대덕전자",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "356890",
+      "name": "싸이버원",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "357880",
+      "name": "SKAI",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "365900",
+      "name": "브이씨",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "376930",
+      "name": "노을",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "393210",
+      "name": "토마토시스템",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "396300",
+      "name": "HT로보틱스",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "402340",
+      "name": "SK스퀘어",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "411080",
+      "name": "샌즈랩",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "434480",
+      "name": "모니터랩",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "451760",
+      "name": "컨텍",
+      "evidence": {
+        "bucket": "TWO_FACTOR",
+        "supportingFamilyCount": 2,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "476080",
+      "name": "M83",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "487720",
+      "name": "키움제10호스팩",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    },
+    {
+      "reasonType": "NEW",
+      "code": "900100",
+      "name": "파이온엑스",
+      "evidence": {
+        "bucket": "SINGLE_FACTOR",
+        "supportingFamilyCount": 1,
+        "active": true
+      }
+    }
+  ]
 }
